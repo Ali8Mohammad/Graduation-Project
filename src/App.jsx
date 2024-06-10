@@ -1,8 +1,7 @@
 // import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import {FontAwesomeIcon} from ' @fortawesome/react-fontawesome';
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Home() {
   return <h2>Home</h2>;
 }
