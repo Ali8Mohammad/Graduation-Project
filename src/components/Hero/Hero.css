@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TradeGothic LT Extended Regular';
+    src: url('./assets/fonts/TradeGothicLTExtendedRegular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.NM_Hero {
+    font-family: var(--second-font);
+    color: var(--second-text-color);
+}
+h2{
+    font-family: var(--second-font);
+}

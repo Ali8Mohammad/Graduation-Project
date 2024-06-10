@@ -1,13 +1,33 @@
-// import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+import {
+    createBrowserRouter,
+    RouterProvider,
+  } from "react-router-dom";
+import './index.css';
+import LandingPage from './LandingPage/LandingPage.jsx';
 
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+  const title='LIVE & TRAVEL';
+  const para='Special offers to suit your plan';
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <App />,
+      children:[
+        {
+        path: "/home",
+        element: <LandingPage 
+          title={title} para={para}/>,
+        }
+      ]
+    },
+  ]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+       <RouterProvider router={router} />
+    </React.StrictMode>
+) 
