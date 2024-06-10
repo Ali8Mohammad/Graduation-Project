@@ -8,7 +8,7 @@ import {
     Navigate,
 } from "react-router-dom";
 import './index.css';
-import LandingPage from './pages/LandingPage/LandingPage.jsx';
+import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
