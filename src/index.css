@@ -10,8 +10,8 @@
   --second-acount-color: #FF8682;
   --facebook-icon-color: #1877F2;
   --black-color: #000000;
-  --main-font: "Montserrat";
-  --second-font: "TradeGothic LT Extended";
+  --main-font:'Montserrat', sans-serif;
+  --second-font:'TradeGothic LT Extended Regular', sans-serif;
   --main-padding: 104px;
   --main-border-radius: 20px;
   --second-border-radius: 16px;
@@ -46,4 +46,9 @@
   --large-width-icon: 20px;
   --meduim-width-icon: 18px;
   --small-width-icon: 16px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

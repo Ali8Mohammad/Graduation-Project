@@ -1,0 +1,77 @@
+.NM_NavBar {
+    width: 100%;
+    background: transparent;
+    padding: 2.61% 2.32%;
+    height: 96px;
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    font-family: var(--main-font);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: relative;
+}
+
+.NM_Start {
+    width: 242px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.NM_Start a {
+    text-decoration: none;
+    color: var(--second-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.NM_Start a img {
+    width: 22.5px;
+    height: 19.5px;
+}
+
+.NM_FindFlight {
+    width: 107px;
+}
+
+.NM_FindStays {
+    width: 103px;
+}
+
+.NM_Logo {
+    width: 110.36px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.NM_Buttons {
+    width: 177px;
+    height: 48px;
+    right: 2.32%;
+    position: absolute;
+}
+
+.NM_Buttons button {
+    border: none;
+}
+
+.NM_Login {
+    width: 73px;
+    padding: 15.5px 32px 15.5px 0;
+    background-color: transparent;
+    color:var(--second-text-color) ;
+}
+
+.NM_Signup {
+    width: 104px;
+    padding: 15.5px 24px;
+    border-radius: 8px;
+}

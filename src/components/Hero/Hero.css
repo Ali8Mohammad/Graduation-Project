@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'TradeGothic LT Extended Regular';
+    src: url('./assets/fonts/TradeGothicLTExtendedRegular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.NM_Hero {
+    width: 100%;
+    color: var(--second-text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1,h2{
+    font-family: var(--second-font);
+    margin-bottom: 0;
+}
+h2{
+    width: 27.32%;  /* 377 *100 / 1380 */
+    height: 57px;
+    font-size: var(--xxlarge-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--xxlarge-line-hieght);
+    margin-top:54px;
+}
+h1{
+    width: 54.6%;  /* 753 *100 / 1380 */
+    height: 101px;
+    line-height: var(--xxxlarge-line-hieght);
+    font-size: var(--xxxlarge-font-size);
+    font-weight: var(--fourth-font-weight);
+
+}
+p{
+    width: 22.5%;  /* 311 *100 / 1380 */
+    height: 24px;
+    font-family: var(--main-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--third-font-weight);
+    line-height:var(--xmedium-line-hieght);
+    text-align: center;
+
+}
+
