@@ -7,7 +7,7 @@ import Hero from '../components/Hero/Hero';
 
 export default function LandingPage({title,para}) {
     return (
-        <section>
+        <section className='NM_LandingPage'>
             <Wrapper backgroundImage={landingPageBackground}>
                 <Nav />
                 <Hero title={title} para={para}/>

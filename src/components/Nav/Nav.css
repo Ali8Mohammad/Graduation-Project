@@ -8,8 +8,9 @@
     line-height: var(--xxsmall-line-hieght);
     font-family: var(--main-font);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    position: relative;
 }
 
 .NM_Start {
@@ -46,14 +47,16 @@
 .NM_Logo {
     width: 110.36px;
     height: 36px;
-    gap: 0px;
-    opacity: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .NM_Buttons {
     width: 177px;
     height: 48px;
-    opacity: 0px;
+    right: 2.32%;
+    position: absolute;
 }
 
 .NM_Buttons button {
