@@ -7,7 +7,7 @@ import {
     RouterProvider,
   } from "react-router-dom";
 import './index.css';
-import LandingPage from './LandingPage/LandingPage.jsx';
+import LandingPage from './pages/LandingPage/LandingPage.jsx';
 
 
   const title='LIVE & TRAVEL';
