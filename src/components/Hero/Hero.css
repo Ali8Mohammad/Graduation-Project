@@ -12,17 +12,19 @@
     flex-direction: column;
     align-items: center;
 }
+h1,h2{
+    font-family: var(--second-font);
+    margin-bottom: 0;
+}
 h2{
     width: 27.32%;  /* 377 *100 / 1380 */
     height: 57px;
-    font-family: var(--second-font);
     font-size: var(--xxlarge-font-size);
     font-weight: var(--fourth-font-weight);
     line-height: var(--xxlarge-line-hieght);
     margin-top:54px;
 }
 h1{
-    font-family: var(--second-font);
     width: 54.6%;  /* 753 *100 / 1380 */
     height: 101px;
     line-height: var(--xxxlarge-line-hieght);
