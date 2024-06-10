@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     createBrowserRouter,
     RouterProvider,
+    Navigate,
 } from "react-router-dom";
 import './index.css';
 import LandingPage from './pages/LandingPage/LandingPage.jsx';
@@ -20,13 +21,17 @@ const navButtons = (
 
 const router = createBrowserRouter([
     {
-        path: "/home",
+        path: "/",
         element: <App />,
         children: [
             {
-                path: "/home",
-                element: <LandingPage title={title} para={para} navButtons={navButtons} />,
-            }
+              path: "/",
+              element: <Navigate to="/home" replace />
+          },
+          {
+              path: "/home",
+              element: <LandingPage title={title} para={para} navButtons={navButtons} />,
+          }
         ]
     },
 ]);
