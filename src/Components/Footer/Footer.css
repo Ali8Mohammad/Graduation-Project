@@ -46,6 +46,7 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    /* flex-wrap: wrap; */
 }
 .NM_Right h6{
 font-family:var(--second-font);
@@ -74,4 +75,29 @@ width: 100%;
     flex-direction: column;
     height: 140px; 
     width: 175.2px;
+}
+@media screen and (max-width:1352px){
+    .NM_Right{
+        flex-wrap: wrap;
+    }
+    .NM_Content{
+        height: max-content;
+    }
+}
+@media screen and (max-width:1057px){
+    .NM_Footer{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:857px){
+    .NM_Content{
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    .NM_Right{
+        gap: 10px;
+    }
+    .NM_Footer{
+        padding: 218px 30px 20px 30px;
+    }
 }

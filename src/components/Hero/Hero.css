@@ -40,6 +40,32 @@
     font-weight: var(--third-font-weight);
     line-height:var(--xmedium-line-hieght);
     text-align: center;
-
+}
+@media screen and (max-width:1256px){
+    .NM_Hero p,.NM_Hero h1,.NM_Hero h2{
+        width: 90%;
+    }
+    .NM_Hero h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:632px){
+    .NM_Hero h1{
+        font-size: 40px;
+    }
+    .NM_Hero h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:406px){
+    .NM_Hero h1{
+        font-size: 30px;
+    }
+    .NM_Hero h2{
+        font-size: 20px;
+    }
+    .NM_Hero p{
+        font-size: 16px;
+    }
 }
 
