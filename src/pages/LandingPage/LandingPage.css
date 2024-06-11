@@ -1,0 +1,9 @@
+.subscribe {
+    width:  104px;
+    height: 56px;
+    padding: 8px 16px 8px 16px;
+    gap: 4px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+
+}
