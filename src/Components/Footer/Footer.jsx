@@ -33,34 +33,66 @@ export default function Footer() {
             <div className="NM_Right">
                 <div className="NM_Destinations">
                     <h6>Our Destinations</h6>
-                    <p>Canada</p>
-                    <p>Alaksa</p>
-                    <p>France</p>
-                    <p>Iceland</p>           
+                    <a href="#">
+                        <p>Canada</p>
+                    </a>
+                    <a href="#">
+                        <p>Alaksa</p>
+                    </a>
+                    <a href="#">
+                        <p>France</p>
+                    </a>
+                    <a href="#">
+                        <p>Iceland</p>
+                    </a>           
                 </div>
                 <div className="NM_Activities">
                     <h6>Our Activities</h6>
-                    <p>Northern Lights</p>
-                    <p>Cruising & sailing</p>
-                    <p>Multi-activities</p>
-                    <p>Kayaing</p>  
+                    <a href="#">
+                        <p>Northern Lights</p>
+                    </a>
+                    <a href="#">
+                        <p>Cruising & sailing</p>
+                    </a>
+                    <a href="#">
+                        <p>Multi-activities</p>
+                    </a>
+                    <a href="#">
+                        <p>Kayaing</p>
+                    </a>  
                 </div>
                 <div className="NM_Blogs">
                     <h6>Travel Blogs</h6>
-                    <p>Bali Travel Guide</p>
-                    <p>Sri Lanks Travel Guide</p>
-                    <p>Peru Travel Guide</p>
-                    <p>Bali Travel Guide</p>  
+                    <a href="#">
+                        <p>Bali Travel Guide</p>
+                    </a>
+                    <a href="#">
+                        <p>Sri Lanks Travel Guide</p>
+                    </a>
+                    <a href="#">
+                        <p>Peru Travel Guide</p>
+                    </a>
+                    <a href="#">
+                        <p>Bali Travel Guide</p> 
+                    </a> 
                 </div>
                 <div className="NM_About">
                     <h6>About Us</h6>
-                    <p>Our Story</p>
-                    <p>Work with us</p>  
+                    <a href="#">
+                        <p>Our Story</p>
+                    </a>
+                    <a href="#">
+                        <p>Work with us</p>
+                    </a>  
                 </div>
                 <div className="NM_Contact">
                     <h6>Contact Us</h6>
-                    <p>Our Story</p>
-                    <p>Work with us</p>  
+                    <a href="#">
+                        <p>Our Story</p>
+                    </a>
+                    <a href="#">
+                        <p>Work with us</p>
+                    </a>  
                 </div>
             </div>
         </div>

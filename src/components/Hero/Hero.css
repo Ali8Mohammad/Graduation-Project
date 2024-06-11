@@ -12,11 +12,11 @@
     flex-direction: column;
     align-items: center;
 }
-h1,h2{
+.NM_Hero h1,h2{
     font-family: var(--second-font);
     margin-bottom: 0;
 }
-h2{
+.NM_Hero h2{
     width: 27.32%;  /* 377 *100 / 1380 */
     height: 57px;
     font-size: var(--xxlarge-font-size);
@@ -24,7 +24,7 @@ h2{
     line-height: var(--xxlarge-line-hieght);
     margin-top:54px;
 }
-h1{
+.NM_Hero h1{
     width: 54.6%;  /* 753 *100 / 1380 */
     height: 101px;
     line-height: var(--xxxlarge-line-hieght);
@@ -32,7 +32,7 @@ h1{
     font-weight: var(--fourth-font-weight);
 
 }
-p{
+.NM_Hero p{
     width: 22.5%;  /* 311 *100 / 1380 */
     height: 24px;
     font-family: var(--main-font);
