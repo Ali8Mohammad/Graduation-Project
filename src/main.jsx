@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     createBrowserRouter,
@@ -12,6 +12,7 @@ import FlightListing from './Pages/Flight Flow/FlightListing/FlightListing.jsx';
 import FlightDetail from './Pages/Flight Flow/FlightDetail/FlightDetail.jsx';
 import FlightBooking from './Pages/Flight Flow/FlightBooking/FlightBooking.jsx';
 import LandingPage from './Pages/LandingPage/LandingPage.jsx';
+import FlightFlow from './Pages/Flight Flow/FlightFlow.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -38,23 +39,30 @@ const State = () => {
             children: [
                 {
                     path: "/",
-                    element: <LandingPage title={title} para={para} navButtons={navButtons} />,
+                    element: <LandingPage title={title}
+                     para={para} navButtons={navButtons} />,
                 },
                 {
-                    path: "/search",
-                    element: <FlightsSearch />,
-                },
-                {
-                    path: "/listing",
-                    element: <FlightListing />,
-                },
-                {
-                    path: "/detail",
-                    element: <FlightDetail />,
-                },
-                {
-                    path: "/fightbooking",
-                    element: <FlightBooking />,
+                    path: "/flightflow",
+                    element:<FlightFlow/>,
+                    children: [
+                        {
+                            path: "/flightflow",
+                            element: <FlightsSearch />,
+                        },
+                        {
+                            path: "listing",
+                            element: <FlightListing />,
+                        },
+                        {
+                            path: "detail",
+                            element: <FlightDetail />,
+                        },
+                        {
+                            path: "booking",
+                            element: <FlightBooking />,
+                        },
+                    ]
                 },
             ]
         },

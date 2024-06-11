@@ -6,7 +6,7 @@ export default function Nav({ buttons }) {
   return (
     <nav className='NM_NavBar'>
       <div className='NM_Start'>
-        <Link to={"/search"} className='NM_FindFlight' rel="noopener noreferrer">
+        <Link to={"/flightflow"} className='NM_FindFlight' rel="noopener noreferrer">
           <img src="./src/assets/images/plane.svg" alt="plane icon" /> Find Flight
         </Link>
         <Link to={"#"} className='NM_FindStays' rel="noopener noreferrer">
