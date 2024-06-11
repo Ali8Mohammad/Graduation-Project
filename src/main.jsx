@@ -7,11 +7,11 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 import FlightsSearch from './Pages/Flight Flow/FlightsSearch/FlightsSearch.jsx';
 import FlightListing from './Pages/Flight Flow/FlightListing/FlightListing.jsx';
 import FlightDetail from './Pages/Flight Flow/FlightDetail/FlightDetail.jsx';
 import FlightBooking from './Pages/Flight Flow/FlightBooking/FlightBooking.jsx';
+import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';

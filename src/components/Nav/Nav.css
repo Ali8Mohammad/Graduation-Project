@@ -1,14 +1,14 @@
 .NM_NavBar {
     width: 100%;
     background: transparent;
-    padding: 2.61% 2.32%;
+    /* padding: 2.61% 2.32%; */
+    padding: 36px 32px;
     height: 96px;
     font-size: var(--xxsmall-font-size);
     font-weight: var(--third-font-weight);
     line-height: var(--xxsmall-line-hieght);
     font-family: var(--main-font);
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     position: relative;
 }
@@ -55,7 +55,8 @@
 .NM_Buttons {
     width: 177px;
     height: 48px;
-    right: 2.32%;
+    /* right: 2.32%; */
+    right: 32px;
     position: absolute;
 }
 
