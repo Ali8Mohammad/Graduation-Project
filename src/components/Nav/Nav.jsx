@@ -24,10 +24,10 @@ export default function Navigation({ buttons,navMobile }) {
   return (
     <nav className={`NM_NavBar ${isScrolled ? 'scrolled' :''}`}>
       <div className='NM_Start'>
-        <Link to={"/flightflow"} className='NM_FindFlight' rel="noopener noreferrer">
+        <Link to={"flightflow"} className='NM_FindFlight' rel="noopener noreferrer">
           <img src="./src/assets/images/plane.svg" alt="plane icon" /> Find Flight
         </Link>
-        <Link to={"#"} className='NM_FindStays' rel="noopener noreferrer">
+        <Link to={"hotelflow"} className='NM_FindStays' rel="noopener noreferrer">
           <img src="./src/assets/images/bed.svg" alt="bed icon" /> Find Stays
         </Link>
       </div>
