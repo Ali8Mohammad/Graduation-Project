@@ -1,6 +1,6 @@
 // import React from 'react';
 import './LandingPage.css';
-import landingPageBackground from '../../assets/images/';
+import landingPageBackground from '../../assets/images/herolanding.jpeg';
 import Wrapper from '../../Components/Wrapper/Wrapper';
 import Nav from '../../Components/Nav/Nav';
 import Hero from '../../Components/Hero/Hero';
