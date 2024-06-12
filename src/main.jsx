@@ -13,6 +13,14 @@ import FlightDetail from './Pages/Flight Flow/FlightDetail/FlightDetail.jsx';
 import FlightBooking from './Pages/Flight Flow/FlightBooking/FlightBooking.jsx';
 import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 import FlightFlow from './Pages/Flight Flow/FlightFlow.jsx';
+import HotelFlow from './Pages/Hotel Flow/HotelFlow.jsx';
+import HotelSearch from './Pages/Hotel Flow/HotelSearch/HotelSearch.jsx';
+import HotelListing from './Pages/Hotel Flow/HotelListing/HotelListing.jsx';
+import HotelDetail from './Pages/Hotel Flow/HotelDetail/HotelDetail.jsx';
+import HotelBooking from './Pages/Hotel Flow/HotelBooking/HotelBooking.jsx';
+import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
+import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
+import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -43,11 +51,11 @@ const State = () => {
                      para={para} navButtons={navButtons} />,
                 },
                 {
-                    path: "/flightflow",
+                    path: "flightflow",
                     element:<FlightFlow/>,
                     children: [
                         {
-                            path: "/flightflow",
+                            path: "",
                             element: <FlightsSearch />,
                         },
                         {
@@ -62,6 +70,52 @@ const State = () => {
                             path: "booking",
                             element: <FlightBooking />,
                         },
+                    ]
+                },
+                {
+                    path: "hotelflow",
+                    element:<HotelFlow/>,
+                    children: [
+                        {
+                            path: "",
+                            element: <HotelSearch />,
+                        },
+                        {
+                            path: "listing",
+                            element: <HotelListing />,
+                        },
+                        {
+                            path: "detail",
+                            element: <HotelDetail />,
+                        },
+                        {
+                            path: "booking",
+                            element: <HotelBooking />,
+                        },
+                        {
+                            path: "favorites",
+                            element: <Favorites />,
+                        },
+                    ]
+                },
+                {
+                    path: "myaccount",
+                    element:<AccountFlow/>,
+                    children: [
+                        {
+                            path: "",
+                            element: <MyAccount />,
+                        }
+                    ]
+                },
+                {
+                    path: "myaccount",
+                    element:<AccountFlow/>,
+                    children: [
+                        {
+                            path: "",
+                            element: <MyAccount />,
+                        }
                     ]
                 },
             ]
