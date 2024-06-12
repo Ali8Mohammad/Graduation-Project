@@ -61,7 +61,8 @@ const State = () => {
                 {
                     path: "/",
                     element: <LandingPage title={title}
-                        para={para} navButtons={navButtons} navButtonsForMobile={navButtonsForMobile} />,
+                        para={para} navButtons={navButtons} 
+                        navButtonsForMobile={navButtonsForMobile} />,
                 },
                 {
                     path: "flightflow",
@@ -109,16 +110,6 @@ const State = () => {
                             path: "favorites",
                             element: <Favorites />,
                         },
-                    ]
-                },
-                {
-                    path: "myaccount",
-                    element: <AccountFlow />,
-                    children: [
-                        {
-                            path: "",
-                            element: <MyAccount />,
-                        }
                     ]
                 },
                 {
