@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client'; 
+import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     createBrowserRouter,
@@ -21,6 +21,7 @@ import HotelBooking from './Pages/Hotel Flow/HotelBooking/HotelBooking.jsx';
 import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
 import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
 import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
+import { Link } from 'react-router-dom';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -39,6 +40,18 @@ const State = () => {
             <button className={NM_Signup2} onClick={toggleButtons}>Sign up</button>
         </>
     );
+    const navButtonsForMobile = (
+        <>
+            <li>
+                <Link className='NM_Link' to={"#"} rel="noopener noreferrer"> Login
+                </Link>
+            </li>
+            <li>
+                <Link className='NM_Link' to={"#"} rel="noopener noreferrer"> Sign Up
+                </Link>
+            </li>
+        </>
+    );
 
     const router = createBrowserRouter([
         {
@@ -48,11 +61,11 @@ const State = () => {
                 {
                     path: "/",
                     element: <LandingPage title={title}
-                     para={para} navButtons={navButtons} />,
+                        para={para} navButtons={navButtons} navButtonsForMobile={navButtonsForMobile} />,
                 },
                 {
                     path: "flightflow",
-                    element:<FlightFlow/>,
+                    element: <FlightFlow />,
                     children: [
                         {
                             path: "",
@@ -74,7 +87,7 @@ const State = () => {
                 },
                 {
                     path: "hotelflow",
-                    element:<HotelFlow/>,
+                    element: <HotelFlow />,
                     children: [
                         {
                             path: "",
@@ -100,7 +113,7 @@ const State = () => {
                 },
                 {
                     path: "myaccount",
-                    element:<AccountFlow/>,
+                    element: <AccountFlow />,
                     children: [
                         {
                             path: "",
@@ -110,7 +123,7 @@ const State = () => {
                 },
                 {
                     path: "myaccount",
-                    element:<AccountFlow/>,
+                    element: <AccountFlow />,
                     children: [
                         {
                             path: "",
