@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.FlightBookingRow {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    /* padding: 0 58px; */
+    display: flex;
+    justify-content: space-between;
+}
+.FlightBooking {
+    background: #FAFAFA;
+}
