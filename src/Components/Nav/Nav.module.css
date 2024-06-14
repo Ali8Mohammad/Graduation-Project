@@ -1,17 +1,25 @@
 .NM_NavBar {
-    width: 100%;
+    width: calc(100% - 60px);
     background: transparent;
-    /* padding: 2.61% 2.32%; */
     padding: 36px 32px;
     height: 96px;
     font-size: var(--xxsmall-font-size);
     font-weight: var(--third-font-weight);
     line-height: var(--xxsmall-line-hieght);
     font-family: var(--main-font);
+    color:var(--second-text-color);
     display: flex;
     align-items: center;
-    position: relative;
-    color: var(--second-text-color);
+    position: fixed;
+    right: 30px;
+    transition: background 0.3s ease, width 0.3s ease;
+}
+.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    top: 0; 
+    width: 100%;
+    right: 0;
+    left: 0;
 }
 .AM_NavBar {
     width: 100%;
@@ -53,7 +61,6 @@
     fill: currentColor;
     
 }
-
 .NM_FindFlight {
     width: 107px;
 }
@@ -94,4 +101,110 @@
     width: 104px;
     padding: 15.5px 24px;
     border-radius: 8px;
+}
+.NM_ToggleButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    position: fixed;
+    right: 37px;
+    top: 42px;
+}
+.NM_ToggleButton span {
+    width: 25px;
+    height: 2px;
+    margin-bottom: .3rem;
+    background-color: var(--main-bgcolor);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.NM_End.open {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 10rem;
+    align-items: start;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 14rem;
+    border-top-left-radius: 30px;
+    box-shadow: -31px 0px 20px rgba(0, 0, 0, 0.1); 
+}
+.NM_End {
+    height: 3rem;
+    display: none; 
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    right: -7px; 
+}
+
+.NM_ToggleButton.open {
+    right: 170px;
+    top: 42px;
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+    z-index: 100;
+}
+.NM_ToggleButton.open span {
+    width: 2px;
+    height: 25px;
+}
+.NM_End.open .NM_Link {
+    text-decoration: none;
+    color: var( --second-text-color);
+    position: relative;
+}
+.NM_End.open .NM_Link:hover{
+    color: var(--main-bgcolor);
+}
+
+.NM_End.open .NM_Link:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--main-bgcolor);
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+}
+.NM_ToggleButton.open::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100vw;
+    height: 1px;
+    background-color: #E1E1E1;
+}
+@media screen and (min-width: 992px) {
+    .NM_ToggleButton {
+        display: none; 
+    }
+}
+@media screen and (max-width:992px){
+    .NM_Start,.NM_Buttons{
+        display: none;
+    }
+    .NM_Logo{
+        height: 27px;
+        width: 105px;
+        left: 24px;
+        transform: translateX(0%);
+    }
+    .NM_NavBar{
+        width: calc(100% - 14px);
+        left: 7px;
+    }
 }

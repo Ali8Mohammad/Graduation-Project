@@ -23,9 +23,7 @@ export default function Navigation({ buttons,navMobile,page }) {
   },[]);
   return (
     <nav
-      className={`${
-        page === "landingPage" ? styles.NM_NavBar : styles.AM_NavBar
-      } ${isScrolled ? 'scrolled' :''}`}
+      className={`${ page === "landingPage" ? styles.NM_NavBar : styles.AM_NavBar }  ${isScrolled ? styles.scrolled :''}`}
     >
       <div className={styles.NM_Start}>
         <Link
@@ -47,7 +45,7 @@ export default function Navigation({ buttons,navMobile,page }) {
           Find Flight
         </Link>
         <Link
-          to={"hotelflow"}
+          to={"/hotelflow"}
           className={styles.NM_FindStays}
           rel="noopener noreferrer"
         >
@@ -105,24 +103,24 @@ export default function Navigation({ buttons,navMobile,page }) {
       </svg>
 
       <div className={styles.NM_Buttons}>{buttons}</div>
-      <div>
-       <button className={`NM_ToggleButton ${isOpen ? 'open' : ''}`} onClick={toggleNav}>
-           <span className={isOpen ? 'open' : ''}></span>
-           <span className={isOpen ? 'open' : ''}></span>
-           <span className={isOpen ? 'open' : ''}></span>
+      {/* <div>
+       <button className={`styles.NM_ToggleButton ${isOpen ? 'styles.open' : ''}`} onClick={toggleNav}>
+           <span className={isOpen ? 'styles.open' : ''}></span>
+           <span className={isOpen ? 'styles.open' : ''}></span>
+           <span className={isOpen ? 'styles.open' : ''}></span>
        </button>
-       <ul className={`NM_End ${isOpen ? 'open' : ''}`}>
+       <ul className={`styles.NM_End ${isOpen ? 'styles.open' : ''}`}>
           <li>
-             <Link className='NM_Link' to={"flightflow"} rel="noopener noreferrer"> Find Flight
+             <Link className='styles.NM_Link' to={"flightflow"} rel="noopener noreferrer"> Find Flight
            </Link>
           </li>
           <li>
-             <Link className='NM_Link' to={"hotelflow"}  rel="noopener noreferrer"> Find Stays
+             <Link className='styles.NM_Link' to={"hotelflow"}  rel="noopener noreferrer"> Find Stays
            </Link>
           </li>
           {navMobile}
        </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };

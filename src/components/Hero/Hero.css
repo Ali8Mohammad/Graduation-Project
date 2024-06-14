@@ -22,7 +22,7 @@
     font-size: var(--xxlarge-font-size);
     font-weight: var(--fourth-font-weight);
     line-height: var(--xxlarge-line-hieght);
-    margin-top:54px;
+    margin-top: 150px;
 }
 .NM_Hero h1{
     width: 54.6%;  /* 753 *100 / 1380 */
