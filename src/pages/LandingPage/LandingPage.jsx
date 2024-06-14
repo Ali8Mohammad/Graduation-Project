@@ -10,7 +10,7 @@ export default function LandingPage({ title, para, navButtons }) {
     return (
         <section className='NM_LandingPage'>
             <Wrapper backgroundImage={landingPageBackground}>
-                <Nav buttons={navButtons} />
+                <Nav page='landingPage'/>
                 <Hero title={title} para={para} />
             </Wrapper>
             <Footer />

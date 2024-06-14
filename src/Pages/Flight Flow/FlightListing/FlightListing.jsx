@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navigation from '../../../Components/Nav/Nav';
+import Footer from '../../../Components/Footer/Footer';
 
 export default function FlightListing() {
   return (
-    <div>FlightListing</div>
-  )
+    <>
+      <Navigation page="flightPage" />
+      <Footer />
+    </>
+  );
 }

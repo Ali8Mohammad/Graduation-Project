@@ -11,8 +11,22 @@
     display: flex;
     align-items: center;
     position: relative;
+    color: var(--second-text-color);
 }
-
+.AM_NavBar {
+    width: 100%;
+    background: white;
+    padding: 36px 32px;
+    height: 96px;
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    font-family: var(--main-font);
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--main-text-color);
+}
 .NM_Start {
     width: 242px;
     height: 24px;
@@ -24,16 +38,20 @@
 
 .NM_Start a {
     text-decoration: none;
-    color: var(--second-text-color);
+    color: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4px;
 }
 
-.NM_Start a img {
+.svgIcon {
     width: 22.5px;
     height: 19.5px;
+}
+.svgIconcolor {
+    fill: currentColor;
+    
 }
 
 .NM_FindFlight {
@@ -45,6 +63,7 @@
 }
 
 .NM_Logo {
+    fill: currentColor;
     width: 110.36px;
     height: 36px;
     position: absolute;
