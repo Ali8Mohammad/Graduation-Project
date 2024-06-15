@@ -6,10 +6,44 @@
 .FlightBookingRow {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
-    /* padding: 0 58px; */
     display: flex;
     justify-content: space-between;
+    padding: 0 80px;
 }
 .FlightBooking {
     background: #FAFAFA;
+}
+.FlightContainer {
+    width: 750px;
+}
+@media (max-width : 1310px) {
+    .FlightBookingRow {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width : 992px) {
+    .FlightBookingRow {
+        padding: 0 30px;
+    }
+}
+@media (max-width : 810px) {
+    .FlightContainer {
+        width: 700px;
+    }
+}
+@media(min-width : 679px) and (max-width : 756px) {
+    .FlightContainer {
+        width: 620px;
+    }
+}
+@media(min-width : 567px) and (max-width : 678px)  {
+    .FlightContainer {
+        width: 500px;
+    }
+}
+@media(min-width : 320px) and (max-width : 566px) {
+    .FlightContainer {
+        width: 265px;
+    }
 }

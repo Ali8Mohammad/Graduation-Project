@@ -18,10 +18,8 @@
 .Aya-path .Aya-path-p .Aya-path-icon1 , .Aya-path .Aya-path-p .Aya-path-icon2 {
     width: 14px;
     height: 14px;
-    /* padding: 3.5px 5.5px 0px 6px; */
     padding-right: 8px;
-    gap: 0px;
-    opacity: 0.75;
+    opacity: 75%;
 }
 .Aya-path .Aya-path-p .Aya-path-span2 {
     width: 58px;
@@ -41,21 +39,26 @@
     font-weight: var(--second-font-weight);
     line-height: 17.07px;
     text-align: left;
-    gap: 0px;
-    opacity: 0.75;
+    opacity: 75%;
 }
 .Aya-path {
-    /* background-color: red; */
     padding: 48px 0 29px 104px;
     background: #FAFAFA;
     width: max-content;
-    /* height: 17px; */
     top: 135px;
     left: 104px;
     gap: 8px;
-    opacity: 0px;
 }
 .Aya-path .Aya-path-p {
     padding: 0;
 }
-
+@media (max-width : 992px) {
+    .Aya-path {
+        padding: 48px 30px 29px 30px;
+    }
+}
+@media(min-width : 320px) and (max-width : 566px) {
+    .Aya-path {
+        width: 320px;
+    }
+}
