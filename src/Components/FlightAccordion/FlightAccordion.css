@@ -1,0 +1,154 @@
+.Aya-Accordion {
+    margin: 0 0 40px 0px;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    width: 750px;
+    height: 242px;
+    border-radius: 12px;
+}
+.Aya-Accordion .Accordion-Header {
+    width: 716px;
+    height: 80px;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FF8500;
+    margin-bottom: 16px;
+}
+.Aya-Accordion .Header-Body .Header-Body-para1 {
+    font-family: var(--second-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.21px;
+    text-align: left;
+    color: #112211;
+    margin-bottom: 8px !important;
+}
+.Aya-Accordion .Header-Body .Header-Body-para2 {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    margin-bottom: 0;
+}
+.Aya-Accordion .Accordion-Header-Hiden {
+    width: 716px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 114px;
+}
+.Aya-Accordion .Header-Body-Hiden {
+    width: 632px;
+    height: 114px;
+    padding-left: 12px;
+}
+.Aya-Accordion .Header-Body-Hiden .Header-Body-Hiden-para1 {
+    font-family: var(--second-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.21px;
+    text-align: left;
+    color: #112211;
+    margin-bottom: 12px;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    width: 560px;
+    height: 55px;
+    margin-bottom: 12px;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden .Header-Body-Hiden-para3 {
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    text-align: left;
+    color: #112211;
+    text-decoration: underline;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-icon input {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+}
+.Aya-Accordion .Accordion-Header .Header-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Aya-Accordion .Accordion-Header .Header-icon img {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+}
+.Aya-Accordion .toogleHiden {
+    display: none;
+}
+@media (max-width : 810px) {
+    .Aya-Accordion {
+        width: 700px;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 660px;
+    }
+}
+@media(min-width : 679px) and (max-width : 756px) {
+    .Aya-Accordion {
+        width: 620px;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden{
+        width: 580px;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+        width: 500px;
+        line-height: 20px;
+    }
+}
+@media(min-width : 567px) and (max-width : 678px) {
+    .Aya-Accordion {
+        width: 500px;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 465px;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+        width: 380px;
+    }
+}
+@media(min-width : 320px) and (max-width : 566px) {
+    .Aya-Accordion {
+        width: 265px;
+        height: 285px;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden{
+        width: 235px;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+        width: 200px;
+        height: 100px;
+        line-height: 20px;
+    }
+}
