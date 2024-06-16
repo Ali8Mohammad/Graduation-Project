@@ -1,0 +1,26 @@
+.MS-placesSection{
+    width: 100%;
+    padding: 263px 0 80px 0;
+}
+.MS-placesCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: 100%;
+}
+.MS-pargraph{
+    opacity: 75%;
+    font-weight: var( --main-font-weight);
+}
+.MS-BtnseePlaces{
+    border-radius:4px;
+    Padding:8px 16px 8px 16px;
+    border: 1px solid var( --main-bgcolor);
+    background-color: var(--second-text-color);
+}
+.MS-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}

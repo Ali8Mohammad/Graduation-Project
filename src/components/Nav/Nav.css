@@ -12,6 +12,7 @@
     position: fixed;
     right: 30px;
     transition: background 0.3s ease, width 0.3s ease;
+    z-index: 100;
 }
 .NM_NavBar.scrolled {
     background: rgba(0, 0, 0, 0.8);
