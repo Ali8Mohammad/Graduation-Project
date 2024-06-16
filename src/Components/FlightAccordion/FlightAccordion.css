@@ -41,6 +41,7 @@
     justify-content: space-between;
     align-items: center;
     height: 114px;
+    border-radius: 12px;
 }
 .Aya-Accordion .Header-Body-Hiden {
     width: 632px;
@@ -83,7 +84,7 @@
     justify-content: center;
     align-items: center;
 }
-.Aya-Accordion .Accordion-Header-Hiden .Header-icon input {
+.Aya-Accordion .Accordion-Header-Hiden .Header-icon img {
     width: 20px;
     height: 20px;
     top: 2px;
@@ -146,9 +147,15 @@
     .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden{
         width: 235px;
     }
+    .Aya-Accordion .Accordion-Header-Hiden {
+        height: 200px;
+    }
     .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
         width: 200px;
-        height: 100px;
+        height: 110px;
         line-height: 20px;
+    }
+    .Aya-Accordion .Header-Body-Hiden {
+        height: 160px;
     }
 }
