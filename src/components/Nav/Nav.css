@@ -13,6 +13,12 @@
     right: 30px;
     transition: background 0.3s ease, width 0.3s ease;
 }
+:host([FlightBooking2]).Nav::ng-deep.NM_NavBar {
+    background-color: aqua;
+
+}
+
+
 .NM_NavBar.scrolled {
     background: rgba(0, 0, 0, 0.8);
     top: 0; 
