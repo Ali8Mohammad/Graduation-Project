@@ -1,0 +1,49 @@
+.NM_Slider div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.NM_Slider div{
+    height: 816px;
+    border-radius: 30px;
+}
+.NM_Slider .slick-dots {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.NM_Slider .slick-dots ul{
+    height: 10px;
+}
+.NM_Slider .slick-dots li {
+    margin: 0 8px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+.NM_Slider .slick-dots li button:before {
+    font-size: 0; 
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1; 
+    transition: all 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.NM_Slider .slick-dots li.slick-active button:before {
+    background-color: var(--main-bgcolor); 
+    width: 32px; 
+    height: 10px; 
+    border-radius: 5px; 
+    opacity: 1;
+}
+
+  

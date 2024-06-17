@@ -1,6 +1,6 @@
 .NM_Footer{
     width: 100%;
-    padding: 218px 104px 64px 104px;
+    padding: 218px var(--main-padding) 64px var(--main-padding);
     background-color: var(--main-bgcolor);
     color: var(--main-text-color);
 }
@@ -94,7 +94,7 @@ width: 100%;
         gap: 10px;
     }
     .NM_Footer{
-        padding: 218px 30px 20px 30px;
+        padding: 218px var(--main-padding-home) 20px var(--main-padding-home);
     }
 }
 @media screen and (max-width:857px){

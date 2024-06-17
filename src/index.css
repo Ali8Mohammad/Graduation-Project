@@ -13,6 +13,8 @@
   --main-font:'Montserrat', sans-serif;
   --second-font:'TradeGothic LT Extended Regular', sans-serif;
   --main-padding: 104px;
+  --main-padding-home: 30px;
+  --small-padding: 7px;
   --main-border-radius: 20px;
   --second-border-radius: 16px;
   --third-border-radius: 12px;
