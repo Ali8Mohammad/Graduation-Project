@@ -13,7 +13,6 @@
     align-items: center;
 }
 .NM_Hero h1,h2{
-    font-family: var(--second-font);
     margin-bottom: 0;
 }
 .NM_Hero h2{
@@ -35,7 +34,6 @@
 .NM_Hero p{
     width: 22.5%;  /* 311 *100 / 1380 */
     height: 24px;
-    font-family: var(--main-font);
     font-size: var(--small-font-size);
     font-weight: var(--third-font-weight);
     line-height:var(--xmedium-line-hieght);

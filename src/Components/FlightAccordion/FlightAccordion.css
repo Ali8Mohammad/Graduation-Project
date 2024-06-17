@@ -19,7 +19,6 @@
     margin-bottom: 16px;
 }
 .Aya-Accordion .Header-Body .Header-Body-para1 {
-    font-family: var(--second-font);
     font-size: 16px;
     font-weight: 700;
     line-height: 20.21px;
@@ -28,7 +27,6 @@
     margin-bottom: 8px !important;
 }
 .Aya-Accordion .Header-Body .Header-Body-para2 {
-    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -49,7 +47,6 @@
     padding-left: 12px;
 }
 .Aya-Accordion .Header-Body-Hiden .Header-Body-Hiden-para1 {
-    font-family: var(--second-font);
     font-size: 16px;
     font-weight: 700;
     line-height: 20.21px;
@@ -58,7 +55,6 @@
     margin-bottom: 12px;
 }
 .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
-    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -68,7 +64,6 @@
     margin-bottom: 12px;
 }
 .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden .Header-Body-Hiden-para3 {
-    font-family: var(--main-font);
     font-size: 12px;
     font-weight: 500;
     line-height: 14.63px;

@@ -11,7 +11,6 @@
 .Aya-Flight-Form .Form-Part1 .Login-Or-Signup {
     width: 702px;
     height: 25px;
-    font-family: var(--second-font);
     font-size: 20px;
     font-weight: 700;
     line-height: 25.26px;
@@ -30,7 +29,6 @@
 }
 .Aya-Flight-Form .Form-Part1 .PhoneNumber::placeholder {
     padding: 18px 0 18px 16px;
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
@@ -40,7 +38,6 @@
 .Aya-Flight-Form .Form-Part1 .Text {
     width: 702px;
     height: 34px;
-    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -49,7 +46,6 @@
     margin-bottom: 16px;
 }
 .Aya-Flight-Form .Form-Part1 .Text span {
-    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 500;
     line-height: 17.07px;
@@ -69,7 +65,6 @@
 .Aya-Flight-Form .Form-Part1 .Continue span {
     width: 75px;
     height: 20px;
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
@@ -95,7 +90,6 @@
 .Aya-Flight-Form .Form-Part2 .or {
     width: 20px;
     height: 20px;
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
@@ -143,7 +137,6 @@
 .Aya-Flight-Form .Form-Part4 .Continue-with-email span {
     width: 166px;
     height: 20px;
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;

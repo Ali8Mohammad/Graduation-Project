@@ -6,7 +6,6 @@
     font-size: var(--xxsmall-font-size);
     font-weight: var(--third-font-weight);
     line-height: var(--xxsmall-line-hieght);
-    font-family: var(--main-font);
     display: flex;
     align-items: center;
     position: fixed;
