@@ -1,5 +1,4 @@
 .NM_Footer{
-    font-family: var(--second-font);
     width: 100%;
     padding: 218px 104px 64px 104px;
     background-color: var(--main-bgcolor);
@@ -49,7 +48,6 @@
     /* flex-wrap: wrap; */
 }
 .NM_Right h6{
-font-family:var(--second-font);
 font-size: var(--xsmall-font-size);
 font-weight: var(--fourth-font-weight);
 line-height: var(--medium-line-hieght);
@@ -58,7 +56,6 @@ margin-bottom: 16px;
 
 }
 .NM_Right p{
-font-family: var(--main-font);
 font-size: var(--xxsmall-font-size);
 font-weight: var(--second-font-weight);
 line-height: var(--xxsmall-line-hieght);
