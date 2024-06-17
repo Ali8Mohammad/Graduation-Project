@@ -20,6 +20,8 @@
 }
 .MS-ReviewCard h3{
     line-height: var( --xxmedium-line-hieght);
+    font-size: var(  --second-medium-font-size);
+    font-weight: var(  --fourth-font-weight);
 }
 .MS-ReviewCard .MS-pargraph{
     font-size: var(  --xxsmall-font-size);
@@ -46,6 +48,8 @@
 }
 .MS-textright{
     text-align: right;
+}
+.MS-head6{
     font-size: var(  --xxsmall-font-size);
     font-weight: var(  --fourth-font-weight);
 }

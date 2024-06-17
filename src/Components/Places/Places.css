@@ -17,10 +17,17 @@
     Padding:8px 16px 8px 16px;
     border: 1px solid var( --main-bgcolor);
     background-color: var(--second-text-color);
+    font-size:var(  --xxsmall-font-size) ;
+    font-weight: var(  --second-font-weight);
 }
 .MS-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
+}
+.MS-flex h3{
+font-size: var(  --medium-font-size);
+font-weight: var(  --third-font-weight);
+font-family: var(--main-font);
 }

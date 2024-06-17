@@ -15,18 +15,19 @@
 .MS-newsletter h2{
     width: 364px;
     padding: 24px  0;
-    font-size: 44px; 
-    font-weight: 700;
+    font-size:var(  --xlarge-font-size); 
+    font-weight: var(  --fourth-font-weight);
     line-height: 54px;
 }
 .MS-newsletter h6{
-font-size: 20px;
-font-weight: 700;
+font-size: var( --small-font-size);
+font-weight: var(  --fourth-font-weight);
 line-height: 25.26px;
+Opacity:80%;
 }
 .MS-newsletter p{
 opacity: 70%;
-font-size: 18px;
+font-weight: var(--second-font-weight);
 line-height: 19.5px;
 }
 .MS-inputnewsletter{
