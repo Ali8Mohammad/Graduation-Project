@@ -152,3 +152,27 @@
     width: 24px;
     height: 24px;
 }
+
+@media screen and (max-width:1403px) {
+    .NM_SignUpF h2{
+        height: max-content;
+    }
+}
+@media screen and (max-width:992px) {
+    .NM_Account{
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width:600px) {
+  .NM_Line{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:371px) {
+    .NM_SignUpF .NM_ParaLog{
+        height: max-content
+  }
+  .NM_SignUpF h2{
+    font-size: var(--medium-font-size);
+}
+}

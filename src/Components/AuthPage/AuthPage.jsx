@@ -5,7 +5,7 @@ const NM_Group = '../../src/assets/images/NM_Group.svg';
 const facebook = "../../src/assets/images/NMfacebook.svg";
 const google = "../../src/assets/images/NMgoogle.svg";
 const apple = "../../src/assets/images/NMapple.svg";
-const Back ='../.././src/assets/images/NM<.svg'
+const Back ='../.././src/assets/images/NMBack.svg'
 
 const AuthPage = ({ FormComponent, isSignUp, isAddPayment }) => {
   return (
