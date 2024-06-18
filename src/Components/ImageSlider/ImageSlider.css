@@ -45,5 +45,10 @@
     border-radius: 5px; 
     opacity: 1;
 }
+@media screen and (max-width:1300px) {
+    .NM_Slider div{
+        height: 500px;
+    }
+}
 
   

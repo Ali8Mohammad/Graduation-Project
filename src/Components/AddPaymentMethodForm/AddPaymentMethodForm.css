@@ -27,3 +27,8 @@
     width: 24px;
     height: 15.7px;
 }
+@media screen and (max-width:704px) {
+    .NM_Text,.NM_SignUpF h2{
+        height: max-content;
+    }
+  }

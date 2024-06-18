@@ -10,3 +10,9 @@
     margin-top: 15px;
     color: #FF8682;
 }
+@media screen and (max-width:500px) {
+    .NM_AllCheckbox{
+        flex-direction: column;
+        align-items: start;
+    }
+}
