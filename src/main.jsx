@@ -13,7 +13,7 @@ import FlightDetail from './Pages/Flight Flow/FlightDetail/FlightDetail.jsx';
 import FlightBooking from './Pages/Flight Flow/FlightBooking/FlightBooking.jsx';
 import LandingPage from './Pages/LandingPage/LandingPage.jsx';
 import FlightFlow from './Pages/Flight Flow/FlightFlow.jsx';
-import styles from './Components/Nav/Nav.module.css';
+import './Components/Nav/Nav.css';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -23,8 +23,8 @@ const State = () => {
     const toggleButtons = () => {
         setIsLoginActive(prevState => !prevState);
     };
-    const NM_Login2 = isLoginActive ? styles.NM_Login : styles.NM_Signup;
-    const NM_Signup2 = isLoginActive ? styles.NM_Signup : styles.NM_Login;
+    const NM_Login2 = isLoginActive ? "NM_Login" : "NM_Signup";
+    const NM_Signup2 = isLoginActive ?"NM_Signup" : "NM_Login";
 
     const navButtons = (
         <>
