@@ -1,0 +1,7 @@
+.MS-FlightAndHotel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 70px;
+}

@@ -1,11 +1,16 @@
 .NM_Wrapper{
     background-size: cover;
     background-position:center;
-    margin: 30px;
+    margin: var(--main-padding-home);
     /* height = 599 * 100 / 812 */
     height:73.8vh;
     border-radius: 0px 0px 24px 24px;
     opacity: 0px;
     box-shadow: 0px 4px 16px 0px #8DD3BB26;
     border-radius: 24px;
+}
+@media screen and (max-width:992px){
+    .NM_Wrapper{
+        margin: var(--small-padding);
+    }
 }

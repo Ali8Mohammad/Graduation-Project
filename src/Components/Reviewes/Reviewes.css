@@ -1,0 +1,23 @@
+.MS-ReviewesSection {
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 241px;
+}
+.MS-pargraphReview{
+    font-weight: 400;
+    line-height: 19.5px;
+    color:var(  --black-color);
+}
+.MS-ReviewesSection button{
+    border-radius:4px;
+    Padding:8px 16px 8px 16px;
+    border: 1px solid var( --main-bgcolor);
+    background-color: var(--second-text-color);
+}
+.MS-reviewCards{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap: 48px;
+    margin-left:104px  !important;
+}

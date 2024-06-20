@@ -1,0 +1,157 @@
+.Aya-Flight_Card .cards {
+    height: 469.5px;
+    border: none;
+    padding: 24px 0px 0px 0px;
+    gap: 16px;
+    border-radius: 12px ;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px 0px #1122110D;
+}
+.Aya-Flight_Card .cards .part1 .image {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px 0px 0px 0px;
+    margin-right: 15px;
+}
+.Aya-Flight_Card .card-body {
+    padding: 0;
+}
+.Aya-Flight_Card .cards .part1 {
+    padding: 0 20px;
+    margin-bottom: 16px;
+}
+.Aya-Flight_Card .Line1 {
+    width: 329.656px;
+    height: 0.5px;
+    margin: 0 20px 16px 20px;
+    opacity: 25%;
+    background: #112211;
+    transform: rotate(180deg);
+}
+.Aya-Flight_Card .Line2 {
+    width: 329.656px;
+    height: 0.5px;
+    margin: 0 0 16px 0px;
+    opacity: 25%;
+    background: #112211;
+    transform: rotate(180deg);
+}
+.Aya-Flight_Card .part1 .title {
+    width: 77px;
+    height: 20px;
+    opacity: 75%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color : #112211;
+    margin-bottom: 4px !important;
+}
+.Aya-Flight_Card .part1 .subtitle {
+    width: 223px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    color : #112211;
+    margin-bottom: 20px !important;
+}
+.Aya-Flight_Card .part1-content {
+    padding: 10px 0;
+}
+.Aya-Flight_Card .part1 .part1-content .button {
+    width: 40px;
+    height: 32px;
+    background-color: #FFFFFF;
+    gap: 4px;
+    border-radius: 4px;
+    margin-right: 8px;
+    border: 1px solid #FF8500
+}
+.Aya-Flight_Card .part1 .part1-content .reviews {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    text-align: left;
+    color: #112211;
+}
+.Aya-Flight_Card .part2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+.Aya-Flight_Card .part2 .part2-span {
+    font-weight: 700;
+}
+.Aya-Flight_Card .part3 .title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.21px;
+    text-align: left;
+    color: #112211;
+    padding-left: 20px;
+}
+.Aya-Flight_Card .part3 .list-price ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.Aya-Flight_Card .part3 .list-price {
+    padding: 0 20px;
+}
+.Aya-Flight_Card .part3 .list-price ul .item {
+    padding-bottom: 16px;
+}
+.Aya-Flight_Card .part3 .list1 li , .Aya-Flight_Card .part3 .list3 li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #112211;
+}
+.Aya-Flight_Card .part3 .list2 li , .Aya-Flight_Card .part3 .list3 .Price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    color: #112211;
+}
+@media (max-width : 1310px) {
+    .Aya-Flight_Card .cards {
+        width: 398px;
+        margin-bottom: 40px;
+    }
+}
+@media(min-width : 320px) and (max-width : 566px)  {
+    .Aya-Flight_Card ,  .Aya-Flight_Card .cards .part1 , .Aya-Flight_Card .part3 .list-price {
+        width: 265px;
+    }
+    .Aya-Flight_Card .cards {
+        width: 265px;
+        height: 489.5px;
+    }
+    .Aya-Flight_Card .cards .part1 .image {
+        width: 80px;
+        height: 80px;
+    }
+    .Aya-Flight_Card .part1 .subtitle {
+        width: 150px;
+        height: 35px;
+    }
+    .Aya-Flight_Card .Line1 , .Aya-Flight_Card .Line2 {
+        width: 225px;
+    }
+    .Aya-Flight_Card .part2 {
+        width: 250px;
+    }
+    .Aya-Flight_Card .Line1 {
+        width: 225px;
+    }
+    .Aya-Flight_Card .part3 .title {
+        width: 200px;
+    }
+}

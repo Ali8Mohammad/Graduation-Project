@@ -1,0 +1,199 @@
+.Aya-Flight-Form {
+    width: 750px;
+    height: 455px;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 12px ;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    margin: 0 0 120px 0;
+}
+.Aya-Flight-Form .Form-Part1 .Login-Or-Signup {
+    width: 702px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.26px;
+    text-align: left;
+    color : #112211;
+    margin-bottom: 16px;
+}
+.Aya-Flight-Form .Form-Part1 .PhoneNumber {
+    width: 702px;
+    height: 56px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid #79747E ;
+    margin-bottom: 16px;
+}
+.Aya-Flight-Form .Form-Part1 .PhoneNumber::placeholder {
+    padding: 18px 0 18px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    color: #1C1B1F;
+}
+.Aya-Flight-Form .Form-Part1 .Text {
+    width: 702px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: #112211;
+    margin-bottom: 16px;
+}
+.Aya-Flight-Form .Form-Part1 .Text span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    text-align: left;
+    color: #112211;
+}
+.Aya-Flight-Form .Form-Part1 .Continue {
+    width: 702px;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+    gap: 4px;
+    border-radius: 4px ;
+    background: #FF8500;
+    border: none;
+    margin-bottom: 24px;
+}
+.Aya-Flight-Form .Form-Part1 .Continue span {
+    width: 75px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #112211;
+}
+.Aya-Flight-Form .Form-Part2 {
+    width: 702px;
+    height: 20px;
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.Aya-Flight-Form .Form-Part2 .Line1 , .Aya-Flight-Form .Form-Part2 .Line2 {
+    width: 337px;
+    height: 0px;
+    opacity: 25%;
+    border: 1px solid #112211 ;
+    transform: rotate(180deg);
+    margin: 10px 0;
+}
+.Aya-Flight-Form .Form-Part2 .or {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #112211;
+}
+.Aya-Flight-Form .Form-Part3 {
+    width: 702px;
+    height: 56px;
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.Aya-Flight-Form .Form-Part3 .facebook , .Aya-Flight-Form .Form-Part3 .google , .Aya-Flight-Form .Form-Part3 .apple {
+    width: 236.67px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 4px ;
+    border: 1px solid #FF8500 ; 
+    background-color: #FFFFFF;
+}
+.Aya-Flight-Form .Form-Part3 .facebook img, .Aya-Flight-Form .Form-Part3 .google img , .Aya-Flight-Form .Form-Part3 .apple img {
+    width: 24px;
+    height: 24px;
+}
+.Aya-Flight-Form .Form-Part4 .Continue-with-email {
+    border: none;
+    background-color: #FFFFFF;
+    border: 1px solid #FF8500 ;
+    border-radius: 4px;
+    width: 702px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Aya-Flight-Form .Form-Part4 .Continue-with-email img {
+    padding-right: 16px;
+    top: 3.75px;
+    left: 1.5px;
+}
+.Aya-Flight-Form .Form-Part4 .Continue-with-email span {
+    width: 166px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #112211;
+}
+@media (max-width : 810px) { 
+    .Aya-Flight-Form {
+        width: 700px;
+    }
+    .Aya-Flight-Form .Form-Part1 .Login-Or-Signup , .Aya-Flight-Form .Form-Part2 , .Aya-Flight-Form .Form-Part1 .PhoneNumber ,
+    .Aya-Flight-Form .Form-Part1 .Text , .Aya-Flight-Form .Form-Part1 .Continue , .Aya-Flight-Form .Form-Part3 ,
+    .Aya-Flight-Form .Form-Part4 .Continue-with-email{
+        width: 655px;
+    }
+}
+@media(min-width : 678px) and (max-width : 756px) {
+    .Aya-Flight-Form {
+        width: 620px;
+    }
+    .Aya-Flight-Form .Form-Part1 .Login-Or-Signup , .Aya-Flight-Form .Form-Part2 , .Aya-Flight-Form .Form-Part1 .PhoneNumber ,
+    .Aya-Flight-Form .Form-Part1 .Text , .Aya-Flight-Form .Form-Part1 .Continue , .Aya-Flight-Form .Form-Part3 ,
+    .Aya-Flight-Form .Form-Part4 .Continue-with-email {
+        width: 570px;
+    }
+}
+@media(min-width : 567px) and (max-width : 678px) {
+    .Aya-Flight-Form {
+        width: 500px;
+    }
+    .Aya-Flight-Form .Form-Part1 .Login-Or-Signup , .Aya-Flight-Form .Form-Part2 , .Aya-Flight-Form .Form-Part1 .PhoneNumber ,
+    .Aya-Flight-Form .Form-Part1 .Text , .Aya-Flight-Form .Form-Part1 .Continue , .Aya-Flight-Form .Form-Part3 ,
+    .Aya-Flight-Form .Form-Part4 .Continue-with-email {
+        width: 455px;
+    }
+}
+@media(min-width : 320px) and (max-width : 566px) {
+    .Aya-Flight-Form {
+        width: 265px;
+        height: 505px;
+    }
+    .Aya-Flight-Form .Form-Part1 .PhoneNumber , .Aya-Flight-Form .Form-Part4 .Continue-with-email ,  .Aya-Flight-Form .Form-Part1 .Continue ,
+    .Aya-Flight-Form .Form-Part2 , .Aya-Flight-Form .Form-Part3 , .Aya-Flight-Form .Form-Part1 .Login-Or-Signup ,
+    .Aya-Flight-Form .Form-Part1 .Text{
+        width: 220px;
+    }
+    .Aya-Flight-Form .Form-Part1 .Login-Or-Signup {
+        height: 45px;
+    }
+    .Aya-Flight-Form .Form-Part1 .Text {
+        height: 64px;
+    }
+    .Aya-Flight-Form .Form-Part3 .facebook, .Aya-Flight-Form .Form-Part3 .google, .Aya-Flight-Form .Form-Part3 .apple {
+        width: 60px;
+        padding: 16px;
+    }
+    .Aya-Flight-Form .Form-Part4 .Continue-with-email span {
+        font-size: 15px;
+    }
+}
