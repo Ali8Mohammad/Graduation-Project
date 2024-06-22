@@ -6,7 +6,7 @@ import FlightBooking from './Pages/Flight Flow/FlightBooking/FlightBooking'
 function App() {
   return (
     <>
-    <FlightBooking />
+    <Outlet />
     </>
   )
 }

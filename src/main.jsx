@@ -6,6 +6,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import './index.css';
+import './Components/Nav/Nav.css';
 import App from './App.jsx';
 import FlightsSearch from './Pages/Flight Flow/FlightsSearch/FlightsSearch.jsx';
 import FlightListing from './Pages/Flight Flow/FlightListing/FlightListing.jsx';
@@ -29,6 +30,9 @@ import NewPassword from './Pages/Auth/NewPassword.jsx';
 import ForgetPassword from './Pages/Auth/ForgetPassword.jsx';
 import AddPayment from './Pages/Auth/AddPayment.jsx';
 import VerifyCode from './Pages/Auth/VerifyCode.jsx';
+import favourite from './assets/images/favourites.svg';
+import client from './assets/images/Client-1.png';
+import arrow from './assets/images/Arrow_Down.svg';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -43,28 +47,101 @@ const State = () => {
     const NM_LinkLog = isLoginActive ? 'NM_LinkLogin' : 'NM_LinkSignup';
     const NM_LinkSign = isLoginActive ? 'NM_LinkSignup' : 'NM_LinkLogin';
 
-    const navButtons = (
-        <>
-            <button className={NM_Login2} onClick={toggleButtons}>
-            <Link className={NM_LinkLog} to={"auth/login"} rel="noopener noreferrer">Login
-            </Link></button>
-            <button className={NM_Signup2} onClick={toggleButtons}>
-            <Link className={NM_LinkSign} to={"auth"}  rel="noopener noreferrer">Sign up
-            </Link>
-            </button>
-        </>
-    );
+    const Navlinks = ({ type, className, linkTo, linkText, imgSrc, imgAlt, onClick, classNameLink, afterImage, arrowAlt, arrowclass, textClass, imgClass }) => {
+        if (type === 'button') {
+            return (
+                <button className={className} onClick={onClick}>
+                    <Link className={classNameLink} to={linkTo} rel="noopener noreferrer">
+                        {linkText}
+                    </Link>
+                </button>
+            );
+        } else if (type === 'list') {
+            return (
+                <li className={className}>
+                    <Link to={linkTo} onClick={onClick}>
+                        {imgSrc && <img className={imgClass} src={imgSrc} alt={imgAlt} />}
+                        {linkText && <span className={textClass}>{linkText}</span>}
+                        {afterImage && <img className={arrowclass} src={afterImage} alt={arrowAlt}/>}
+                    </Link>
+                </li>
+            );
+        } else {
+            return null;
+        }
+    };
+
+    const Navbuttons = ({ toggleButtons, favourite, client, showAccountButtons, isLandingPage }) => {
+        return (
+            <>
+                {isLandingPage ? (
+                    <>
+                        <Navlinks
+                            type="button"
+                            className={NM_Login2}
+                            linkTo="/auth/login"
+                            linkText="Login"
+                            onClick={toggleButtons}
+                            classNameLink={NM_LinkLog}
+                        />
+                        <Navlinks
+                            type="button"
+                            className={NM_Signup2}
+                            linkTo="/auth"
+                            linkText="Sign up"
+                            onClick={toggleButtons}
+                            classNameLink={NM_LinkSign}
+                        />
+                    </>
+                ) : null}
+                {showAccountButtons && (
+                  <>
+                        <Navlinks
+                            type="list"
+                            className="AM_Link"
+                            linkTo="/favorites"
+                            imgSrc={favourite}
+                            imgAlt="favourite"
+                            linkText="Favourites"
+                            textClass="AM_Favourite"
+                            imgClass="FavouritesImg"
+                            />
+                            <span className='AM_dash'>|</span>
+                        <Navlinks
+                            type="list"
+                            className="AM_Link"
+                            linkTo="#"
+                            imgSrc={client}
+                            imgAlt="John D."
+                            linkText="John D."
+                            onClick={() => {}}
+                            afterImage={arrow}
+                            arrowAlt={"arrow"}
+                            arrowclass={'arrowDown'}
+                            textClass='AM_Client'
+                            imgClass="ClientImg"
+                        />
+                    </>
+                )}
+            </>
+        );
+    };
+
     const navButtonsForMobile = (
         <>
             <li>
-                <Link className='NM_Link' to={"auth/login"} rel="noopener noreferrer"> Login
+                <Link className='NM_Link' to="/auth/login" rel="noopener noreferrer"> Login
                 </Link>
             </li>
             <li>
-                <Link className='NM_Link' to={"auth"} rel="noopener noreferrer"> Sign Up
+                <Link className='NM_Link' to="/auth" rel="noopener noreferrer"> Sign Up
                 </Link>
             </li>
         </>
+    );
+
+    const navButtons = (showAccountButtons, isLandingPage) => (
+        <Navbuttons toggleButtons={toggleButtons} favourite={favourite} client={client} showAccountButtons={showAccountButtons} isLandingPage={isLandingPage} />
     );
 
     const router = createBrowserRouter([
@@ -74,9 +151,14 @@ const State = () => {
             children: [
                 {
                     path: "/",
-                    element: <LandingPage title={title}
-                        para={para} navButtons={navButtons} 
-                        navButtonsForMobile={navButtonsForMobile} />,
+                    element: (
+                        <LandingPage
+                            title={title}
+                            para={para}
+                            navButtons={navButtons(false, true)}
+                            navButtonsForMobile={navButtonsForMobile}
+                        />
+                    )
                 },
                 {
                     path: "flightflow",
@@ -84,7 +166,7 @@ const State = () => {
                     children: [
                         {
                             path: "",
-                            element: <FlightsSearch />,
+                            element: <FlightListing navButtons={navButtons(true, false)} />,
                         },
                         {
                             path: "listing",

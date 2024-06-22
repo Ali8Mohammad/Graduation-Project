@@ -15,7 +15,7 @@ export default function LandingPage({ title, para, navButtons, navButtonsForMobi
     return (
         <section className='NM_LandingPage'>
             <Wrapper backgroundImage={landingPageBackground}>
-                <Navigation buttons={navButtons} navMobile ={navButtonsForMobile}/>
+                <Navigation buttons={navButtons} isLandingPage={true} navMobile ={navButtonsForMobile} page="landingpage"/>
                 <Hero title={title} para={para} />
             </Wrapper>
             <main>
