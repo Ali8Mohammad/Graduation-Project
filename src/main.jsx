@@ -22,6 +22,9 @@ import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
 import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
 import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
 import { Link } from 'react-router-dom';
+import FlightBooking2 from './Pages/Flight Flow/FlightBooking2/FlightBooking2.jsx';
+import FlightBooking3 from './Pages/Flight Flow/FlightBooking3/FlightBooking3.jsx';
+import HotelBookingpage4 from './Pages/Hotel Flow/Hotel-Booking-page4/HotelBookingpage4.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -39,6 +42,7 @@ const State = () => {
             <button className={NM_Login2} onClick={toggleButtons}>Login</button>
             <button className={NM_Signup2} onClick={toggleButtons}>Sign up</button>
         </>
+
     );
     const navButtonsForMobile = (
         <>
@@ -84,6 +88,14 @@ const State = () => {
                             path: "booking",
                             element: <FlightBooking />,
                         },
+                        {
+                            path:"booking1",
+                            element: <FlightBooking2/>
+                        },
+                        {
+                            path:"booking2",
+                            element: <FlightBooking3/>
+                        }
                     ]
                 },
                 {
@@ -109,6 +121,10 @@ const State = () => {
                         {
                             path: "favorites",
                             element: <Favorites />,
+                        },
+                        {
+                            path: "booking4",
+                            element: <HotelBookingpage4 />,
                         },
                     ]
                 },

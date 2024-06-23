@@ -1,31 +1,36 @@
 import React from 'react'
 import './Footer.css'
+import img1 from './../../assets/images/logofooter.svg'
+import img2 from './../../assets/images/facebook.svg'
+import img4 from './../../assets/images/twitter.svg'
+import img5 from './../../assets/images/youtube.svg'
+import img6 from './../../assets/images/instagram.svg'
 
 export default function Footer() {
   return (
     <section className='NM_Footer'>
         <div className='NM_Content'>
             <div className='NM_LogoIcons'>
-                <img src="./src/assets/images/logofooter.svg" alt="" />
+                <img src={img1} alt="" />
                 <div className='NM_Icons'>
                     <div className='NM_Facebook'>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="./src/assets/images/facebook.svg" alt="facebook" />
+                            <img src={img2} alt="facebook" />
                         </a>
                     </div>
                     <div className='NM_Twitter'>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="./src/assets/images/twitter.svg" alt="twitter" />
+                            <img src={img4} alt="twitter" />
                         </a>
                     </div>
                     <div className='NM_Youtube'>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="./src/assets/images/youtube.svg" alt="youtube" />
+                            <img src={img5} alt="youtube" />
                         </a>
                     </div>
                     <div className='NM_Instagram'>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="./src/assets/images/instagram.svg" alt="instagram" />
+                            <img src={img6} alt="instagram" />
                         </a>
                     </div>
                 </div>
