@@ -14,6 +14,8 @@
   --main-font:'Montserrat', sans-serif;
   --second-font:'TradeGothic LT Extended Regular', sans-serif;
   --main-padding: 104px;
+  --main-padding-home: 30px;
+  --small-padding: 7px;
   --main-border-radius: 20px;
   --second-border-radius: 16px;
   --third-border-radius: 12px;
@@ -52,4 +54,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+html {
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--second-font) !important;
 }

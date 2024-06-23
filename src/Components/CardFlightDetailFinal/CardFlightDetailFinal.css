@@ -13,7 +13,6 @@
     width: 6.1rem;
     height: 39px;
     padding: 4.5px 0 4.5px 4.5px;
-    font-family: var(--main-font);
     font-size: var(--medium-font-size);
     font-weight: var(--fourth-font-weight);
     line-height: 39.01px;
@@ -23,7 +22,6 @@
     width: 76px;
     height: 24px;
     opacity: 75%;
-    font-family: var(--main-font);
     font-size: 20px;
     font-weight: 500;
     line-height: 24.38px;
@@ -35,7 +33,6 @@
     height: 30px;
     padding: 4.5px 4.5px 4.5px 0 ;
     margin: 0;
-    font-family: var(--second-font);
     font-size: var(--second-medium-font-size);
     font-weight: var(--fourth-font-weight);
     line-height: 30.31px;
@@ -45,7 +42,6 @@
 .Aya_Flight_Details_Final .part2 .title {
     width: 168px;
     height: 20px;
-    font-family: var(--second-font);
     font-size: 16px;
     font-weight: 700;
     line-height: 20.21px;
@@ -100,7 +96,6 @@
 .Aya_Flight_Details_Final .part3 .part3-1 .p .span1 {
     width: 110px;
     height: 29px;
-    font-family: var(--main-font);
     font-size: 24px;
     font-weight: 600;
     line-height: 29.26px;
@@ -111,7 +106,6 @@
     width: 86px;
     height: 17px;
     opacity: 0.6px;
-    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 500;
     line-height: 17.07px;
@@ -198,7 +192,6 @@
 .Aya_Flight_Details_Final .part4 .span1 , .Aya_Flight_Details_Final .part4 .span3  {
     width: 110px;
     height: 29px;
-    font-family: var(--main-font);
     font-size: 24px;
     font-weight: 600;
     line-height: 29.26px;
@@ -211,7 +204,6 @@
     height: 20px;
     margin: 0;
     opacity: 60%;
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;

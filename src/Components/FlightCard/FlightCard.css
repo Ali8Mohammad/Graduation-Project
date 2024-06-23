@@ -40,7 +40,6 @@
     width: 77px;
     height: 20px;
     opacity: 75%;
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
@@ -51,7 +50,6 @@
 .Aya-Flight_Card .part1 .subtitle {
     width: 223px;
     height: 24px;
-    font-family: var(--main-font);
     font-size: 20px;
     font-weight: 500;
     line-height: 24.38px;
@@ -72,7 +70,6 @@
     border: 1px solid #FF8500
 }
 .Aya-Flight_Card .part1 .part1-content .reviews {
-    font-family: var(--main-font);
     font-size: 12px;
     font-weight: 500;
     line-height: 14.63px;
@@ -80,7 +77,6 @@
     color: #112211;
 }
 .Aya-Flight_Card .part2 {
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
@@ -92,7 +88,6 @@
     font-weight: 700;
 }
 .Aya-Flight_Card .part3 .title {
-    font-family: var(--second-font);
     font-size: 16px;
     font-weight: 700;
     line-height: 20.21px;
@@ -112,7 +107,6 @@
     padding-bottom: 16px;
 }
 .Aya-Flight_Card .part3 .list1 li , .Aya-Flight_Card .part3 .list3 li {
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     line-height: 19.5px;
@@ -120,7 +114,6 @@
     color: #112211;
 }
 .Aya-Flight_Card .part3 .list2 li , .Aya-Flight_Card .part3 .list3 .Price {
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 600;
     line-height: 19.5px;
