@@ -1,0 +1,53 @@
+.MS-newsletter{
+    width:1232px;
+    height:305px;
+    padding: 0px 24px 0px 24px;
+    border-radius: var( --main-border-radius);
+    background-color: var( --second-bgcolor);
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    display: flex;
+    justify-content: space-between;
+    color: var(--second-text-color);
+    position: absolute;
+    left: 104px;
+    bottom: -2430px;
+}
+.MS-newsletter h2{
+    width: 364px;
+    padding: 24px  0;
+    font-size: 44px; 
+    font-weight: 700;
+    line-height: 54px;
+}
+.MS-newsletter h6{
+font-size: 20px;
+font-weight: 700;
+line-height: 25.26px;
+}
+.MS-newsletter p{
+opacity: 70%;
+font-size: 18px;
+line-height: 19.5px;
+}
+.MS-inputnewsletter{
+width:473px;
+height:56px;
+gap: 10px;
+border-radius: 4px;
+padding: 8px 16px 8px 16px;
+border: none;
+}
+.MS-inputnewsletter::placeholder{
+    color: #1C1B1F;
+}
+.MS-btnnewsletter{
+    background-color: var(--second-text-color);
+    border: none;
+    width: 104px;
+    height: 56px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+    margin-left: 16px;
+    font-size: var( --xxsmall-font-size);
+    font-weight: 600;
+}

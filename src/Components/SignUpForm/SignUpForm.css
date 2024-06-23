@@ -1,0 +1,178 @@
+.NM_SignUpF {
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    width: 100%;
+}
+
+.NM_SignUpF h2 {
+    width: 100%;
+    height: 51px;
+    font-family: var(--second-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--large-line-hieght);
+    padding: 0;
+}
+
+.NM_SignUpF .NM_ParaLog {
+    margin-bottom: 48px;
+    margin-top: 16px;
+    font-size: var(--xsmall-font-size);
+    font-weight: var(--main-font-weight);
+    line-height: var(--xxxsmall-line-hieght);
+    opacity: 75%;
+    height: 20px;
+}
+
+.NM_SignUpF .NM_FormLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.NM_Line {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.NM_SignUpF .MuiInputLabel-root,
+.NM_SignUpF .MuiInputBase-input {
+    color: #1C1B1F;
+}
+
+.NM_SignUpF .MuiInputLabel-root {
+    font-family: var(--main-font);
+    font-size: var(--xxsmall-font-size);
+    font-weight: 400;
+    line-height: 17.07px;
+}
+
+.NM_SignUpF .MuiInputBase-input {
+    font-family: var(--main-font);
+    font-size: var(--xsmall-font-size);
+    font-weight: 400;
+    line-height: 19.5px;
+}
+
+.NM_CustomCheckbox {
+    width: 24px;
+    height: 24px;
+}
+
+.NM_LabelP {
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--second-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+}
+
+.NM_LabelP a {
+    text-decoration: none;
+    color: #FF8682;
+}
+
+.NM_Checkbox {
+    margin-top: 15px;
+}
+
+.NM_Submit {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--main-bgcolor);
+    color: var(--main-text-color);
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    margin-top: 31px;
+    margin-bottom: 16px;
+}
+
+.NM_LoginLink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--second-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+}
+
+.NM_LoginLink p {
+    margin-bottom: 40px;
+    height: 17px;
+}
+
+.NM_LoginLink a {
+    text-decoration: none;
+    color: var(--main-bgcolor);
+}
+
+.NM_Row {
+    display: flex;
+    width: 100%;
+    height: 17px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.NM_Row p {
+    width: 110px;
+    margin: 0 16px;
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--main-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    text-align: center;
+    opacity: 50%;
+}
+
+.NM_Row span {
+    height: .5px;
+    background-color: #1C1B1F;
+    flex-grow: 1;
+    opacity: 25%;
+}
+.NM_Account{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+.NM_Account div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    border: 1px solid #FF8500;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+.NM_Account div img{
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width:1403px) {
+    .NM_SignUpF h2{
+        height: max-content;
+    }
+}
+@media screen and (max-width:992px) {
+    .NM_Account{
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width:600px) {
+  .NM_Line{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:371px) {
+    .NM_SignUpF .NM_ParaLog{
+        height: max-content
+  }
+  .NM_SignUpF h2{
+    font-size: var(--medium-font-size);
+}
+}
