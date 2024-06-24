@@ -9,7 +9,7 @@ import FlightSearshMap from '../../../Components/FlightSearchMap/FlightSearshMap
 export default function FlightsSearch() {
   return (
   <>
-
+<FlightSearshMap/>
  <FlightSearchBook/>
 
 </>
