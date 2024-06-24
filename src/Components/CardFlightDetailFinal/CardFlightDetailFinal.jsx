@@ -5,7 +5,7 @@ import './../../../src/index.css'
 const CardFlightDetailFinal = () => {
     return (
     <section className='Aya_Flight_Details_Final'>
-         <Card style={{ }} className='cards'>
+         <Card className='cards'>
       <Card.Body>
         <div className='part1 d-flex justify-content-between'>
             <Card.Title className='title'>Emirates A380 Airbus</Card.Title>
@@ -36,13 +36,19 @@ const CardFlightDetailFinal = () => {
             </div>
         </div>
         <div className="part4">
-        <Card.Title className='span1'>12:00 pm</Card.Title>
-        <Card.Title className='span2'>Newark(EWR)</Card.Title>
-        <Card.Img className='image-line5' src="./../src/assets/images/Line5.svg" />   
-        <Card.Img className='image-vector' src="./../src/assets/images/Vector1.svg" />   
-        <Card.Img className='image-line6' src="./../src/assets/images/Line6.svg" /> 
-        <Card.Title className='span3'>12:00 pm</Card.Title>
-        <Card.Title className='span4'>Newark(EWR)</Card.Title>
+            <div className="part4-1">
+                <Card.Title className='span1'>12:00 pm</Card.Title>
+                <Card.Title className='span2'>Newark(EWR)</Card.Title>
+            </div>
+            <div className="part4-2">
+                <Card.Img className='image-line5' src="./../src/assets/images/Line5.svg" />   
+                <Card.Img className='image-vector' src="./../src/assets/images/Vector1.svg" />   
+                <Card.Img className='image-line6' src="./../src/assets/images/Line6.svg" />
+            </div> 
+            <div className="part4-3">
+                <Card.Title className='span3'>12:00 pm</Card.Title>
+                <Card.Title className='span4'>Newark(EWR)</Card.Title>
+            </div>
         </div>
       </Card.Body>
     </Card>
