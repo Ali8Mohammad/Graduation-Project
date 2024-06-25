@@ -1,0 +1,38 @@
+.MS-RecentCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(238px,1fr));
+    gap: 16px;
+}
+.MS-recent-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:238px;
+    color: var(--main-text-color);
+    margin-top: 32px;
+}
+.MS-recent-card img{
+    padding-right: 16px;
+}
+.MS-recent-card p{
+    opacity: 75%;
+    font-weight:var(  --main-font-weight);
+    font-size: var(  --xxxsmall-font-size);
+}
+.MS-recent-card h5{
+    width: max-content;
+    font-weight: var(  --third-font-weight);
+    font-family: var(--main-font);
+    font-size: var(  --xsmall-font-size);
+}
+.MS-recentsearch{
+    padding: 80px 104px 0 104px;
+}
+@media (max-width: 576px) {
+    .MS-RecentCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
