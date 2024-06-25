@@ -16,54 +16,63 @@ export default function Places() {
             image: firstplace,
             title: "Istanbul, Turkey",
             description: "Flights . Hotels . Resorts",
+            className:"MS-CardPlace"
         },
         {
             id: 2,
             image: secondplace,
             title: "Sydney, Australia",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 3,
             image: thirdplace,
             title: "Baku, Azerbaijan",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 4,
             image: fourplace,
             title: "Malé, Maldives",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 5,
             image: fiveplace,
             title: "Paris, France",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 6,
             image: sixplace,
             title: "New York, US",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 7,
             image: sevenplace,
             title: "London, UK",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 8,
             image: eightplace,
             title: "Tokyo, Japan",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
         {
             id: 9,
             image: nineplace,
             title: "Dubai, UAE",
             description: "Flights . Hotels . Resorts",
+              className:"MS-CardPlace"
         },
     ]
     return (
@@ -71,14 +80,14 @@ export default function Places() {
             <section className='MS-placesSection container'>
                 <div className="MS-flex container">
                     <div>
-                        <h3>Plan your perfect trip</h3>
+                        <h3 className="MS-Head3">Plan your perfect trip</h3>
                         <p className="MS-pargraph">Search Flights & Places Hire to our most popular destinations</p>
                     </div>
                     <button className="MS-BtnseePlaces">See more places</button>
                 </div>
                 <div className="MS-placesCards">
                     {PlacesData.map((cardPlace, id) => (
-                        <CardPlaces key={id} image={cardPlace.image} title={cardPlace.title} description={cardPlace.description} />
+                        <CardPlaces key={id} image={cardPlace.image} title={cardPlace.title} description={cardPlace.description} className={cardPlace.className}/>
                     )
                     )}
                 </div>

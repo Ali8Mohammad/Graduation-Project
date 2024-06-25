@@ -36,7 +36,7 @@ export default function Reviewes() {
       <section className="MS-ReviewesSection">
         <div className="MS-flex container">
           <div>
-            <h3>Reviews</h3>
+            <h3 className="MS-Head3">Reviews</h3>
             <p className="MS-pargraphReview">What people says about Golobe facilities</p>
           </div>
           <button>See All</button>

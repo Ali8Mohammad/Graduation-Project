@@ -56,3 +56,14 @@
 .MS-imgReview{
     padding-top: 40px;
 }
+@media (max-width:576px) {
+    .MS-ReviewCard::after{
+        display: none;
+    }
+    .MS-ReviewCard{
+        width: 300px;
+    }
+    .MS-imgReview{
+        width: 250px;
+    }
+}

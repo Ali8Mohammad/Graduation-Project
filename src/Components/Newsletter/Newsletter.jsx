@@ -13,7 +13,7 @@ export default function Newsletter() {
             <input type="submit" value="Subscribe" className="MS-btnnewsletter" />
           </form>
         </div>
-        <img src={emoji} alt="Subscribe" />
+        <img src={emoji} alt="Subscribe" className="MS-imgSubscribe" />
       </div>
     </>
   )
