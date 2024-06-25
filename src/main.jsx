@@ -22,11 +22,11 @@ import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
 import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
 import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
+
 import FlightBooking2 from './Pages/Flight Flow/FlightBooking2/FlightBooking2.jsx';
 import FlightBooking3 from './Pages/Flight Flow/FlightBooking3/FlightBooking3.jsx';
 import HotelBookingpage4 from './Pages/Hotel Flow/Hotel-Booking-page4/HotelBookingpage4.jsx';
-=======
+
 import Authenticate from './Pages/Auth/Authenticate.jsx';
 import Login from './Pages/Auth/Login.jsx';
 import SignUp from './Pages/Auth/SignUp.jsx';
@@ -34,7 +34,8 @@ import NewPassword from './Pages/Auth/NewPassword.jsx';
 import ForgetPassword from './Pages/Auth/ForgetPassword.jsx';
 import AddPayment from './Pages/Auth/AddPayment.jsx';
 import VerifyCode from './Pages/Auth/VerifyCode.jsx';
->>>>>>> 5c39bf0425fed52692d13053bdb770df56ad476f
+import HotelBooking2 from './Pages/Hotel Flow/Hotel-Booking-page2/HotelBooking2.jsx';
+
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
@@ -134,6 +135,10 @@ const State = () => {
                         {
                             path: "booking",
                             element: <HotelBooking />,
+                        },
+                        {
+                            path: "booking2",
+                            element: <HotelBooking2/>,
                         },
                         {
                             path: "favorites",

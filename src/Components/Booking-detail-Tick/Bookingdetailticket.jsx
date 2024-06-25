@@ -38,7 +38,7 @@ export default function BookingTicket ({Main1, Main2head,Main2content , Main3ima
                             <p>EK</p>
                             <span>ABC12345</span>
                            </div>
-                           <img src={img9} alt="" />
+                           <img src={img9} alt="not-found" />
                         </div>
                     </div>
                 </div>

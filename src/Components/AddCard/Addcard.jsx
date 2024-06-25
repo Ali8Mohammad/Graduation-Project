@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import img1 from './../../assets/images/Visa-add.png'
 import Popup from '../Booking-Popup/Popup'
 import './Addcard.css'
-export default function Addcard () {
+export default function Addcard ({linkto}) {
     const [active, setActive] = useState(null)
     const [isClicked, setIsClicked] = useState(false);
     const [isClicked1, setIsClicked1] = useState(false);
@@ -37,10 +37,12 @@ export default function Addcard () {
     const ActivePanel = (panelId) => {
     setActive(panelId)
     }
-
+const link =[
+   linkto
+]
     return (
-        <div>
-             {showNewCard && <Popup/> }
+        <div className='MH-add'>
+             {showNewCard && <Popup link={link}/> }
             <div className="MH-add-card" >
            
             <div className="MH-head" style={{background : bgcolor ===true ?  "#FF8500" : "#fff"}}>

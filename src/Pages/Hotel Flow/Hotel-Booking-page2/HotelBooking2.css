@@ -1,0 +1,25 @@
+.MH-booking-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
+}
+.MH-Hotelbooking2 {
+    background-color: #FAFAFA;
+}
+.MH-Hotel-main {
+    padding: 6rem 5rem 0 5rem;
+}
+.MH-Hotelbooking2 .Aya-path {
+    padding-left:1.5rem ;
+}
+@media (max-width:1200px) {
+    .MH-Hotelbooking2 .Aya_Hotel_Details_Final {
+        margin-right: 0;
+    }
+    .MH-Hotelbooking2 .Aya-path {
+        width: 100%;
+        text-align: center;
+        padding: 3rem 0;
+    }
+}

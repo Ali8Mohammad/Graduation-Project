@@ -72,11 +72,11 @@
     font-weight: var(--second-font-weight);
     font-size: 12px;
 }
-@media (max-width: 992px) {
-        .MH-add-card {
-            width: 100%;
-        }
+@media (max-width:1200px) {
+    .MH-add-card {
+        width: 100%;
     }
+}
 @media (max-width: 576px) {
     .MH-add-card .MH-head .MH-head-content1 {
         justify-content: start;

@@ -230,4 +230,10 @@
     .MH-favorites-main .MH-favorites-box .MH-favorites-info .MH-info1 .MH-star {
         flex-direction: column;
     }
+    .MH-favorites-main .MH-favorites-box .MH-favorites-info .MH-info1 h2 {
+        font-size: var(--xsmall-font-size);
+    }
+    .MH-favorites-main .MH-favorites-box .MH-favorites-info .MH-info2 p {
+        font-size: var(--small-font-size);
+    }
 }

@@ -28,15 +28,6 @@ export default function Navigation({ buttons,navMobile }) {
     <nav className={`NM_NavBar ${isScrolled ? 'scrolled' :''}`}>
       <div className='NM_Start'>
         <Link to={"flightflow"} className='NM_FindFlight' rel="noopener noreferrer">
-<<<<<<< HEAD
-          <img src='./src/assets/images/plane.svg' alt="plane icon" /> Find Flight
-        </Link>
-        <Link to={"hotelflow"} className='NM_FindStays' rel="noopener noreferrer">
-          <img src='./src/assets/images/bed.svg' alt="bed icon" /> Find Stays
-        </Link>
-      </div>
-      <img className='NM_Logo' src='./src/assets/images/Logo.svg' alt="logo" />
-=======
           <img src={plane} alt="plane icon" /> Find Flight
         </Link>
         <Link to={"hotelflow"} className='NM_FindStays' rel="noopener noreferrer">
@@ -44,7 +35,6 @@ export default function Navigation({ buttons,navMobile }) {
         </Link>
       </div>
       <img className='NM_Logo' src={Logo} alt="logo" />
->>>>>>> 5c39bf0425fed52692d13053bdb770df56ad476f
       <div className='NM_Buttons'>
         {buttons}
       </div>

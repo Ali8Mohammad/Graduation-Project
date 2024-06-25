@@ -8,7 +8,7 @@ import './popup.css'
 
 
 
-export default function Popup() {
+export default function Popup({link}) {
     const [showPopup, setshowPopup] = useState(false)
     const handleClick = () => {
         if(!showPopup) {
@@ -56,7 +56,8 @@ export default function Popup() {
                     <p>Securely save my information for 1-click checkout</p>
                     </div>
                     <div className="MH-btn">
-                    <Link className='MH-addbtn ' to={"/flightflow/booking1"}>Add Card</Link>
+                    {/* <Link className='MH-addbtn ' to={"/flightflow/booking1"}>Add Card</Link> */}
+                    {link}
                     </div>
                    </form>
                    <p className='MH-paragraph' >By confirming your subscription, you allow The Outdoor Inn Crowd Limited to charge your card for this payment and future payments in accordance with their terms. You can always cancel your subscription.</p> 
