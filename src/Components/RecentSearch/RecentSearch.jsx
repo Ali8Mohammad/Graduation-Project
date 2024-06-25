@@ -37,7 +37,7 @@ export default function RecentSearch() {
     ]
   return (     
     <>
-      <section className='container MS-recentsearch'>
+      <section className='MS-recentsearch'>
       <h3 className='MS-Head3'>Your recent searches</h3>
       <div className="MS-RecentCards">
                     {PlacesData.map((cardPlace, id) => (

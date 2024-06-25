@@ -1,3 +1,4 @@
+import FlightSearchBook from "../../../Components/FlightSearchBook/FlightSearchBook";
 import Footer from "../../../Components/Footer/Footer";
 import HeroHotelSearch from "../../../Components/HeroHotelSearch/HeroHotelSearch";
 import Newsletter from "../../../Components/Newsletter/Newsletter";
@@ -11,7 +12,7 @@ export default function HotelSearch() {
         <HeroHotelSearch />
         <ShowPlaces />
         <RecentSearch />
-
+        <FlightSearchBook />
         <Newsletter />
         </main>
         <Footer />
