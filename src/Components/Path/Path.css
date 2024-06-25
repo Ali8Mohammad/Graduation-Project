@@ -1,17 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
 .Aya-path .Aya-path-p .Aya-path-span1 {
     color: var(--main-bgcolor);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--second-font-weight);
-    line-height: 17.07px;
-    text-align: left;
-    width: 48px;
-    height: 17px;
+    line-height: var(--xxsmall-line-hieght);
     padding-right: 8px;
 }
 .Aya-path .Aya-path-p .Aya-path-icon1 , .Aya-path .Aya-path-p .Aya-path-icon2 {
@@ -21,12 +12,10 @@
     opacity: 75%;
 }
 .Aya-path .Aya-path-p .Aya-path-span2 {
-    width: 58px;
-    height: 17px;
+    font-family: var(--main-font);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--second-font-weight);
-    line-height: 17.07px;
-    text-align: left;
+    line-height: var(--xxsmall-line-hieght);
     color: var(--main-bgcolor);
     padding-right: 8px;
 }
@@ -34,28 +23,45 @@
     color: var(--main-text-color);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--second-font-weight);
-    line-height: 17.07px;
-    text-align: left;
+    line-height: var(--xxsmall-line-hieght);
     opacity: 75%;
 }
 .Aya-path {
-    padding: 48px 0 29px 104px;
+    padding: 3rem 0 1.8rem 6.5rem;
     background: #FAFAFA;
     width: max-content;
     top: 135px;
-    left: 104px;
     gap: 8px;
 }
 .Aya-path .Aya-path-p {
     padding: 0;
+    margin-bottom: 0;
 }
-@media (max-width : 992px) {
+
+@media(min-width : 768px) and (max-width : 991px) {
     .Aya-path {
-        padding: 48px 30px 29px 30px;
+        padding: 3rem 0 1.8rem 1.875rem;
     }
 }
-@media(min-width : 320px) and (max-width : 566px) {
+@media(min-width : 576px) and (max-width : 767px)  {
     .Aya-path {
-        width: 320px;
+        padding: 3rem 0 1.8rem 1.875rem;
+    }
+}
+@media(min-width : 400px) and (max-width : 575px) {
+    .Aya-path {
+        padding: 3rem 0 1.8rem 1.875rem;
+    }
+    .Aya-path .Aya-path-p .Aya-path-span1 ,.Aya-path .Aya-path-p .Aya-path-span2 ,.Aya-path .Aya-path-p .Aya-path-span3 {
+        font-size: var(--xxxsmall-font-size);
+    }
+}
+@media(min-width : 320px) and (max-width : 399px) {
+    .Aya-path {
+        padding: 3rem 0 1.8rem 1.875rem;
+    }
+    .Aya-path .Aya-path-p .Aya-path-span3 {
+        display: block;
+        margin-top: 10px;
     }
 }
