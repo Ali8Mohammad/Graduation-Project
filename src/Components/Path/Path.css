@@ -6,7 +6,6 @@
 }
 .Aya-path .Aya-path-p .Aya-path-span1 {
     color: var(--main-bgcolor);
-    font-family: var(--main-font);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--second-font-weight);
     line-height: 17.07px;
@@ -24,7 +23,6 @@
 .Aya-path .Aya-path-p .Aya-path-span2 {
     width: 58px;
     height: 17px;
-    font-family: var(--main-font);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--second-font-weight);
     line-height: 17.07px;
@@ -34,7 +32,6 @@
 }
 .Aya-path .Aya-path-p .Aya-path-span3 {
     color: var(--main-text-color);
-    font-family: var(--main-font);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--second-font-weight);
     line-height: 17.07px;

@@ -1,0 +1,18 @@
+.NM_AllCheckbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.NM_ForgetPassword{
+    text-decoration: none;
+    margin-top: 15px;
+    color: #FF8682;
+}
+@media screen and (max-width:500px) {
+    .NM_AllCheckbox{
+        flex-direction: column;
+        align-items: start;
+    }
+}
