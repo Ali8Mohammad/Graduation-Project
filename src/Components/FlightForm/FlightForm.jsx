@@ -15,13 +15,13 @@ const FlightForm = () => {
         <p className='Line2'></p>
     </div>
     <div className="Form-Part3">
-        <button className='facebook'><img src="./../src/assets/images/Facebook.png" alt="" /></button>
-        <button className='google'><img src="./../src/assets/images/google.png" alt="" /></button>
-        <button className='apple'><img src="./../src/assets/images/apple.png" alt="" /></button>
+        <button className='facebook'><img src="./../src/assets/images/Facebook.png" alt="Facebook" /></button>
+        <button className='google'><img src="./../src/assets/images/google.png" alt="google" /></button>
+        <button className='apple'><img src="./../src/assets/images/apple.png" alt="apple" /></button>
     </div>
     <div className="Form-Part4">
         <button className='Continue-with-email'>
-            <img src="./../src/assets/images/email.png" alt="" />
+            <img src="./../src/assets/images/email.png" alt="email" />
             <span>Continue with email</span>
         </button>
     </div>

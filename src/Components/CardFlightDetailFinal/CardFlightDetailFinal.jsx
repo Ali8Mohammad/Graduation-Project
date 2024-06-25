@@ -5,8 +5,8 @@ import './../../../src/index.css'
 const CardFlightDetailFinal = () => {
     return (
     <section className='Aya_Flight_Details_Final'>
-         <Card className='cards'>
-      <Card.Body>
+    <Card className='cards'>
+        <Card.Body>
         <div className='part1 d-flex justify-content-between'>
             <Card.Title className='title'>Emirates A380 Airbus</Card.Title>
             <span className='span'>240 $</span>
@@ -50,7 +50,7 @@ const CardFlightDetailFinal = () => {
                 <Card.Title className='span4'>Newark(EWR)</Card.Title>
             </div>
         </div>
-      </Card.Body>
+        </Card.Body>
     </Card>
     </section>
     )
