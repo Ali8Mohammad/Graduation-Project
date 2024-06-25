@@ -180,6 +180,14 @@
     height: 1px;
     background-color: #E1E1E1;
 }
+@media screen and (min-width:2200px){
+    .NM_NavBar{
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        right: 0;
+    }
+}
 @media screen and (min-width: 992px) {
     .NM_ToggleButton {
         display: none; 

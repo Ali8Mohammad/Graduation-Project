@@ -1,0 +1,122 @@
+.NM_btn.Review {
+    width: 152px;
+    height: 48px;
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+}
+
+.NM_Line {
+    margin-bottom: 24px;
+}
+
+.NM_Reviews p {
+    margin-bottom: 0;
+}
+.NM_Reviews{
+    border-top: none;
+}
+.NM_Line2 {
+    height: 63px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 24px;
+    border-bottom: .5px solid #11221140;
+}
+
+.NM_Line2 h4 {
+    margin-bottom: 0;
+}
+
+.NM_Line2 h4 {
+    font-size: 50px;
+    font-weight: var(--fourth-font-weight);
+}
+
+.NM_Line2 .NM_Para1 {
+    font-size: var(--small-font-size);
+    font-weight: var(--third-font-weight);
+}
+
+.NM_Line2 .NM_Para2 {
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--main-font-weight);
+}
+
+.NM_Col2 {
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NM_ItemReview {
+    display: flex;
+    gap: 16px;
+    align-items: start;
+    padding: 24px 0;
+    border-bottom: .5px solid #11221140;
+}
+
+.NM_NameValuation {
+    height: 17px;
+    display: flex;
+    gap: 8px;
+}
+
+.NM_Person {
+    width: 45px;
+    height: 45px;
+}
+
+.NM_Valuation,
+.NM_Name,
+.NM_Message {
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+}
+
+.NM_Valuation {
+    border-right: 1px solid #11221140;
+    padding-right: 8px;
+}
+
+.NM_Name,
+.NM_Message {
+    font-weight: var(--main-font-weight);
+}
+
+.NM_Flag {
+    width: 15px;
+    height: 17.5px;
+    top: 1.25px;
+    left: 2.5px;
+
+}
+
+.NM_Box {
+    width: 100%;
+}
+.NM_Close.Review{
+    color: var(--main-bgcolor);
+}
+@media screen and (max-width:466px){
+    .NM_Person {
+        width: 25px;
+        height: 25px;
+    }
+    .NM_ItemReview {
+        gap: 8px;
+    }
+    .NM_NameValuation{
+        flex-direction: column;
+        height: max-content;
+    }
+    .NM_Valuation{
+        border-right:none ;
+    }
+    .NM_Name{
+        padding-bottom: 12px;
+    }
+}
