@@ -1,0 +1,77 @@
+.MS-TabContainer{
+    padding: 0 104px;
+}
+.MS-TabAccount{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    border-radius: var(   --third-border-radius);
+    margin: 32px 0 40px 0 !important;
+}
+.MS-TabAccount .nav-link{
+   padding: 30px 24px !important;
+   width: 362.67px;
+   display: flex;
+   justify-content: flex-start;
+}
+.MS-border2::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height:48px;
+    background-color:#D7E2EE;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+  }
+  .MS-TabAccount .nav-link.active::after {
+    content: "";
+    width: 60% !important;
+    background-color: var(--first-account-color) !important;
+    left:20px !important;
+  }
+  .MS-HeaderAccount{
+font-size: var(  --medium-font-size);
+font-weight: var( --fourth-font-weight);
+  }
+  .MS-infoAcount{
+    margin:16px 0 120px 0 ;
+    background-color:var(    --second-text-color);
+    color: var(   --main-text-color);
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    padding: 16px 24px;
+    border-radius: var(  --second-border-radius);
+  }
+  .MS-accountCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(   --main-text-color);
+    padding: 16px 0;
+  }
+  .MS-infoDescription span{
+    padding-bottom: 8px;
+    opacity: 75%;
+    font-size: var( --xsmall-font-size);
+    font-weight: var(    --main-font-weight);
+    line-height:var(    --xxxsmall-line-hieght);
+  }
+  .MS-infoDescription p{
+    margin-bottom: 0;
+    font-size: var(    --small-font-size);
+    font-weight:var(    --third-font-weight);
+    line-height:var(    --xmedium-line-hieght);
+  }
+  .MS-accountbtn{
+    border: 1px solid var(--first-account-color);
+    background-color: white;
+    color: var(   --main-text-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  .MS-accountbtn img{
+    padding-right: 4px;
+  }
+  .MS-accountbtn1{
+    margin-right:8px ;
+  }

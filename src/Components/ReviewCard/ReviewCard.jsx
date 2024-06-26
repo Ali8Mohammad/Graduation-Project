@@ -17,7 +17,10 @@ export default function ReviewCard(props) {
         </div>
         <h6 className="MS-head6">{props.head6}</h6>
         <p className="MS-pargreview">{props.pargreview}</p>
-        <img src={google} alt="google" /><span className="MS-google">Google</span>
+        <div>
+        <img src={google} alt="google" />
+        <span className="MS-google">Google</span>
+        </div>
         <img src={props.imgReview} alt="place" className="MS-imgReview" />
       </div>
     </>

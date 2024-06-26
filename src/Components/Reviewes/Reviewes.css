@@ -23,16 +23,13 @@
     gap: 48px;
     margin-left:104px  !important;
 }
-@media (max-width:576px) {
+@media (max-width:992px) {
     .MS-ReviewesSection{
         overflow-x:visible;
     }
-    .MS-reviewCards{
+      .MS-reviewCards{
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0 104px;
-    }
-    .MS-pargraphReview{
-        text-align: center;
+        margin: 0 !important;
     }
 }

@@ -4,7 +4,6 @@
     position: relative;
     background-color:var(--second-text-color);
     width: 425px;
-    height: 586px;
     border-radius: 20px;
 }
 .MS-ReviewCard::after{
@@ -61,9 +60,12 @@
         display: none;
     }
     .MS-ReviewCard{
-        width: 300px;
+        width: 90%;
     }
     .MS-imgReview{
-        width: 250px;
+        width: 100%;
+    }
+    .MS-ReviewCard .MS-pargraph{
+        text-align:left;
     }
 }
