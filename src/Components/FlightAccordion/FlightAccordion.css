@@ -1,0 +1,170 @@
+.Aya-Accordion {
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    background: var(--second-text-color);
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    width: 46.8rem;
+    height: 15.12rem;
+    border-radius: var(--third-border-radius);
+}
+.Aya-Accordion .Accordion-Header {
+    width: 44.75rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: var(--third-border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-bgcolor);
+    margin-bottom: 1rem;
+}
+.Aya-Accordion .Header-Body .Header-Body-para1 {
+    font-family: var(--second-font);
+    font-size: var(--xsmall-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--medium-line-hieght);
+    text-align: left;
+    color: var(--main-text-color);
+    margin-bottom: 0.5rem !important;
+}
+.Aya-Accordion .Header-Body .Header-Body-para2 {
+    font-family: var(--main-font);
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--main-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    text-align: left;
+    margin-bottom: 0;
+}
+.Aya-Accordion .Accordion-Header-Hiden {
+    width: 44.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.125rem;
+    border-radius: var(--third-border-radius);
+}
+.Aya-Accordion .Header-Body-Hiden {
+    width: 395rem;
+    height: 7.125rem;
+    padding-left: 0.75rem;
+}
+.Aya-Accordion .Header-Body-Hiden .Header-Body-Hiden-para1 {
+    font-family: var(--second-font);
+    font-size: var(--xsmall-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--medium-line-hieght);
+    text-align: left;
+    color: var(--main-text-color);
+    margin-bottom: 0.75rem;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+    font-family: var(--main-font);
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--main-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    text-align: left;
+    width: 35rem;
+    height: 55px;
+    margin-bottom: 0.75rem;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden .Header-Body-Hiden-para3 {
+    font-family: var(--main-font);
+    font-size: var(--xxxsmall-font-size);
+    font-weight: var(--second-font-weight);
+    line-height: var(--small-line-hieght);
+    text-align: left;
+    color: var(--main-text-color);
+    text-decoration: underline;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Aya-Accordion .Accordion-Header-Hiden .Header-icon img {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+}
+.Aya-Accordion .Accordion-Header .Header-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Aya-Accordion .Accordion-Header .Header-icon img {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+}
+.Aya-Accordion .toogleHiden {
+    display: none;
+}
+@media(min-width : 992px) and (max-width : 1310px) {
+    .Aya-Accordion {
+        width: 56.25rem;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 53.125rem;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-icon {
+        padding-right: 1rem;
+    }
+}
+@media(min-width : 768px) and (max-width : 991px) {
+    .Aya-Accordion {
+        width: 44.8rem;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 43.8rem;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-icon img {
+        margin-right: 15px;
+    }
+}
+@media(min-width : 576px) and (max-width : 767px) {
+    .Aya-Accordion {
+        width: 32rem;
+        height: 16rem;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 31rem;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+        width: 27rem;
+    }
+}
+@media(min-width : 400px) and (max-width : 575px) {
+    .Aya-Accordion {
+        width: 21rem;
+        height: 16rem;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 20rem;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+        width: 16rem;
+        height: 65px;
+    }
+}
+@media(min-width : 320px) and (max-width : 399px) {
+    .Aya-Accordion {
+        width: 16.5rem;
+        height: 18.5rem;
+    }
+    .Aya-Accordion .Accordion-Header , .Aya-Accordion .Accordion-Header-Hiden {
+        width: 15.5rem;
+    }
+    .Aya-Accordion .Accordion-Header-Hiden .Header-Body-Hiden-para2 {
+        width: 10rem;
+        height: 100px;
+    }
+}

@@ -22,10 +22,18 @@ import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
 import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
 import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
 import { Link } from 'react-router-dom';
+import Authenticate from './Pages/Auth/Authenticate.jsx';
+import Login from './Pages/Auth/Login.jsx';
+import SignUp from './Pages/Auth/SignUp.jsx';
+import NewPassword from './Pages/Auth/NewPassword.jsx';
+import ForgetPassword from './Pages/Auth/ForgetPassword.jsx';
+import AddPayment from './Pages/Auth/AddPayment.jsx';
+import VerifyCode from './Pages/Auth/VerifyCode.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
-
+const head2 ='Helping Others';
+const className ='NM_Hero'
 const State = () => {
     const [isLoginActive, setIsLoginActive] = useState(true);
     const toggleButtons = () => {
@@ -33,21 +41,28 @@ const State = () => {
     };
     const NM_Login2 = isLoginActive ? 'NM_Login' : 'NM_Signup';
     const NM_Signup2 = isLoginActive ? 'NM_Signup' : 'NM_Login';
+    const NM_LinkLog = isLoginActive ? 'NM_LinkLogin' : 'NM_LinkSignup';
+    const NM_LinkSign = isLoginActive ? 'NM_LinkSignup' : 'NM_LinkLogin';
 
     const navButtons = (
         <>
-            <button className={NM_Login2} onClick={toggleButtons}>Login</button>
-            <button className={NM_Signup2} onClick={toggleButtons}>Sign up</button>
+            <button className={NM_Login2} onClick={toggleButtons}>
+            <Link className={NM_LinkLog} to={"auth/login"} rel="noopener noreferrer">Login
+            </Link></button>
+            <button className={NM_Signup2} onClick={toggleButtons}>
+            <Link className={NM_LinkSign} to={"auth"}  rel="noopener noreferrer">Sign up
+            </Link>
+            </button>
         </>
     );
     const navButtonsForMobile = (
         <>
             <li>
-                <Link className='NM_Link' to={"#"} rel="noopener noreferrer"> Login
+                <Link className='NM_Link' to={"auth/login"} rel="noopener noreferrer"> Login
                 </Link>
             </li>
             <li>
-                <Link className='NM_Link' to={"#"} rel="noopener noreferrer"> Sign Up
+                <Link className='NM_Link' to={"auth"} rel="noopener noreferrer"> Sign Up
                 </Link>
             </li>
         </>
@@ -60,8 +75,8 @@ const State = () => {
             children: [
                 {
                     path: "/",
-                    element: <LandingPage title={title}
-                        para={para} navButtons={navButtons} 
+                    element: <LandingPage head2={head2} title={title}
+                        para={para} navButtons={navButtons} className={className}
                         navButtonsForMobile={navButtonsForMobile} />,
                 },
                 {
@@ -120,6 +135,36 @@ const State = () => {
                             path: "",
                             element: <MyAccount />,
                         }
+                    ]
+                },
+                {
+                    path: "auth",
+                    element: <Authenticate />,
+                    children: [
+                        {
+                            path: "",
+                            element: <SignUp />,
+                        },
+                        {
+                            path: "login",
+                            element: <Login />,
+                        },
+                        {
+                            path: "new_password",
+                            element: <NewPassword />,
+                        },
+                        {
+                            path: "forget_password",
+                            element: <ForgetPassword />,
+                        },
+                        {
+                            path: "add_payment",
+                            element: <AddPayment />,
+                        },
+                        {
+                            path: "verify_code",
+                            element: <VerifyCode />,
+                        },
                     ]
                 },
             ]

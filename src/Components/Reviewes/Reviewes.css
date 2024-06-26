@@ -1,0 +1,38 @@
+.MS-ReviewesSection {
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 241px;
+}
+.MS-pargraphReview{
+    font-weight:var(  --main-font-weight);
+    line-height: var(  --xxxsmall-line-hieght);
+    color:var(  --black-color);
+}
+.MS-ReviewesSection button{
+    border-radius:4px;
+    Padding:8px 16px 8px 16px;
+    border: 1px solid var( --main-bgcolor);
+    background-color: var(--second-text-color);
+    font-size:var(  --xxsmall-font-size) ;
+    font-weight: var(  --second-font-weight);
+}
+.MS-reviewCards{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap: 48px;
+    margin-left:104px  !important;
+}
+@media (max-width:576px) {
+    .MS-ReviewesSection{
+        overflow-x:visible;
+    }
+    .MS-reviewCards{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 104px;
+    }
+    .MS-pargraphReview{
+        text-align: center;
+    }
+}

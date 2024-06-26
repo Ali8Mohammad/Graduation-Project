@@ -1,0 +1,69 @@
+.MS-ReviewCard{
+    padding: 24px;
+    box-shadow: 2px 4px 16px 0px #1122111A;
+    position: relative;
+    background-color:var(--second-text-color);
+    width: 425px;
+    height: 586px;
+    border-radius: 20px;
+}
+.MS-ReviewCard::after{
+    content: "";
+    position: absolute;
+    width: 425px;
+    height: 586px;
+    top: 24px;
+    left: 24px;
+    border-radius: 20px;
+    background-color: #8DD3BB66;
+    z-index: -1;
+}
+.MS-ReviewCard h3{
+    line-height: var( --xxmedium-line-hieght);
+    font-size: var(  --second-medium-font-size);
+    font-weight: var(  --fourth-font-weight);
+}
+.MS-ReviewCard .MS-pargraph{
+    font-size: var(  --xxsmall-font-size);
+    font-weight: var(  --second-font-weight);
+    opacity: 50%;
+    padding: 16px 0px 12px 0px;
+}
+.MS-pargreview,.MS-google{
+    font-size:var(  --xxxsmall-font-size);
+    font-weight: var(  --second-font-weight);
+    line-height: var(  --small-line-hieght);
+    opacity: 50%;
+}
+.MS-google{
+    padding-left: 8px;
+}
+.MS-stars{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+}
+.MS-stars img{
+    padding-right: 12px;
+}
+.MS-textright{
+    text-align: right;
+}
+.MS-head6{
+    font-size: var(  --xxsmall-font-size);
+    font-weight: var(  --fourth-font-weight);
+}
+.MS-imgReview{
+    padding-top: 40px;
+}
+@media (max-width:576px) {
+    .MS-ReviewCard::after{
+        display: none;
+    }
+    .MS-ReviewCard{
+        width: 300px;
+    }
+    .MS-imgReview{
+        width: 250px;
+    }
+}

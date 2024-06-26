@@ -1,0 +1,32 @@
+.MS_HeroSearch{
+    width: 100%;
+    color: var(--second-text-color);
+    background:linear-gradient(90deg, rgba(0, 35, 77, 0.63) 11.46%, rgba(0, 35, 77, 0) 77.37%), url(./../../assets/images/Hotel-search-hero.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 167px 0 0 126px;
+}
+.MS_HeroSearch h1{
+    width: 440px;
+    font-size: var(  --xxlarge-font-size);
+    font-weight: var(  --fourth-font-weight);
+}
+.MS_HeroSearch p{
+    font-weight: var( --second-font-weight);
+    font-size: var(  --small-font-size);
+}
+@media (max-width: 576px) {
+    .MS_HeroSearch h1{
+        text-align: center;
+        font-size: var( --medium-font-size);
+        width: 100%;
+    }
+    .MS_HeroSearch p{
+        text-align: center;
+    }
+    .MS_HeroSearch{
+        padding: 176px 0 0 0;
+    }
+}

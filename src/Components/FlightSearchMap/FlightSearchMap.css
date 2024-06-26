@@ -1,0 +1,136 @@
+/*Section One Style*/
+
+.OS_one_Title {
+    display: flex;
+    padding: 80px 104px 24px 104px;
+}
+
+.OS_Title_Map h3 {
+    font-size: var(--medium-font-size);
+    font-weight: var(--third-font-weight);
+    line-height: var(--xxxmedium-line-hieght);
+}
+
+.OS_Title_Map p {
+    font-size: var( --xsmall-font-size);
+    font-weight: var(--main-font-weight);
+    line-height: var( --xxxsmall-line-hieght);
+    width: max-content;
+}
+
+.OS_Button_Map {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.OS_Button_Map button {
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    background-color: transparent;
+    border: 2px solid rgba(35, 221, 91, 0.2);
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.OS_Map {
+    height: 30.375rem;
+    background-color: var(--main-bgcolor);
+    position: relative;
+}
+
+.Map-Image {
+    padding-left: 6.0625rem;
+    width: 76.875rem;
+    height: 100%;
+}
+
+
+/*one frame style*/
+
+.OS-map {
+    background-color: white;
+    position: absolute;
+    width: 8.8125rem;
+    height: 3rem;
+    border-radius: 4px;
+    padding: 4px 8px 4px 4px;
+    display: flex;
+}
+
+.OS-map-frame {
+    top: 4.5rem;
+    left: 18.0625em;
+}
+
+.OS-map-frame1 {
+    padding-left: 8px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.OS-map-frame1 h6 {
+    font-size: var(--xxxxsmall-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--xxxxsmall-line-hieght);
+    color: var(--main-text-color);
+}
+
+.OS-map-frame1 p {
+    font-size: 8px;
+    font-weight: var( --main-font-weight);
+    color: var(--main-text-color);
+    line-height: 9.75px;
+}
+
+.OS-ImgArrow {
+    position: absolute;
+    top: 7.875rem;
+    left: 20.05625em;
+}
+
+
+/*tow frame style*/
+
+.OS-Map-frame2 {
+    top: 18.375rem;
+    left: 27.0875em;
+}
+
+.OS-ImgArrow1 {
+    position: absolute;
+    top: 21.75rem;
+    left: 26.5em;
+}
+
+
+/*three frame style*/
+
+.OS-Map-frame3 {
+    top: 17.8rem;
+    left: 44.375em;
+}
+
+
+/*Four frame style*/
+
+.OS-Map-frame4 {
+    top: 6.5625rem;
+    left: 55.875em;
+}
+
+.OS-ImgArrow2 {
+    position: absolute;
+    top: 10rem;
+    left: 55.0625em;
+}
+
+
+/*Five frame style*/
+
+.OS-Map-frame5 {
+    top: 16.25rem;
+    left: 66.0625em;
+}

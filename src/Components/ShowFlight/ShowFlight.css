@@ -1,0 +1,103 @@
+.MS-showFlight{
+    width: 1232px;
+    padding: 16px 32px 32px 32px;
+    gap: 32px;
+    border-radius: 16px;
+    background-color: var(--second-text-color);
+    box-shadow: 0px 4px 16px 0px #8DD3BB26;
+    margin:  0 auto;
+    margin-top: -110px;
+    }
+    .MS-tabs{
+        border-bottom: none;
+    }
+    .MS-tabs .nav-link{
+        border: none;
+        color: var(--main-text-color);
+        position: relative;
+        padding:0 64px 24px 0 ;
+    }
+    .MS-btnFlight{
+        height:48px;
+        padding: 8px 16px 8px 16px;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--main-bgcolor);
+        font-size: var(  --xxsmall-font-size);
+        font-weight: var(  --second-font-weight);
+    }
+    .MS_icon{
+        padding-right: 10px;
+    }
+    .MS-span{
+    font-weight: var(  --third-font-weight);
+    line-height: var(  --xxxsmall-line-hieght);
+    }
+    .MS-plus{
+        padding-right: 4px;
+    }
+    .MS-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+        padding-top: 32px;
+    }
+    .MS-right a{
+        text-decoration: none;
+        color: var(--main-text-color);
+        font-weight: var(  --second-font-weight);
+        font-size: var(  --xxsmall-font-size);
+    }
+    .MS-tabs .nav-link.active::after {
+        content: "";
+        display: block;
+        width: 65%;
+        height: 4px; 
+        background-color: var(--main-bgcolor);
+        position: absolute;
+        bottom: 0;
+        left:0;
+      }
+      .MS-textfields{
+        display: flex;
+        gap: 24px;
+        padding-top: 24px;
+      }
+    .MS-field{
+        width: 324px;
+    }
+    .MS-Returnfield{
+        width: 140px;
+    }
+      .MS-border::before{
+        content: "";
+        display: block;
+        width: 1px;
+        height:80%;
+        background-color:#D7E2EE;
+        position: absolute;
+        top: 0;
+        right: 32px;
+      }
+      @media (max-width:576px) {
+        .MS-showFlight{
+            width:90%;
+        }
+        .MS-textfields{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .MS-field{
+            width: 140px;
+        }
+        .MS-tabs .nav-link{
+            padding:10px;
+        }
+        .MS-border::before{
+            right:0px;
+        }
+        .MS-right{
+            flex-direction: column;
+        }
+      }
