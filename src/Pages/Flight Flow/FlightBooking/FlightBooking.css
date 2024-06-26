@@ -20,6 +20,8 @@
     .FlightBookingRow {
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media(min-width : 992px) and (max-width : 1310px) {

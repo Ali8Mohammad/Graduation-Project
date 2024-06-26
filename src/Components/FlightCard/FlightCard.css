@@ -30,16 +30,16 @@
     margin-bottom: 16px;
 }
 .Aya-Flight_Card .Line1 {
-    width: 329.656px;
-    height: 0.5px;
-    margin: 0 20px 16px 20px;
+    width: 355px;
+    height: 0.1px;
+    margin: 0 0 16px 20px;
     opacity: 25%;
     background: var(--main-text-color);
     transform: rotate(180deg);
 }
 .Aya-Flight_Card .Line2 {
-    width: 329.656px;
-    height: 0.5px;
+    width: 355px;
+    height: 0.1px;
     margin: 0 0 16px 0px;
     opacity: 25%;
     background: var(--main-text-color);
@@ -146,6 +146,14 @@
     text-align: right;
     color: var(--main-text-color);
 }
+@media(min-width : 1400px) and (max-width : 1440px) {
+    .Aya-Flight_Card .flightCards {
+        width: 30.5rem;
+    }
+    .Aya-Flight_Card .Line1 , .Aya-Flight_Card .Line2 {
+        width: 440px;
+    }
+}
 @media(min-width : 992px) and (max-width : 1310px) {
     .Aya-Flight_Card .flightCards , .Aya-Flight_Card .hoteltCards {
         width: 56.25rem;
@@ -172,7 +180,7 @@
         width: 8.5rem;
     }
     .Aya-Flight_Card .Line1 , .Aya-Flight_Card .Line2 {
-        width: 650px;
+        width: 665px;
     }
 }
 @media(min-width : 576px) and (max-width : 767px)  {
@@ -181,7 +189,7 @@
         margin-bottom: 40px;
     }
     .Aya-Flight_Card .Line1 , .Aya-Flight_Card .Line2 {
-        width: 450px;
+        width: 465px;
     }
     .Aya-Flight_Card .cards .part1 .image {
         margin-right: 40px;
@@ -192,6 +200,9 @@
         width: 21rem;
         margin-bottom: 40px;
     }
+    .Aya-Flight_Card .flightCards {
+        height: 505px;
+    }
     .Aya-Flight_Card .hoteltCards {
         height: 530px;
     }
@@ -199,7 +210,7 @@
         width: 21rem;
     }
     .Aya-Flight_Card .Line1 , .Aya-Flight_Card .Line2 {
-        width: 280px;
+        width: 295px;
     }
     .Aya-Flight_Card .part1 .image {
         width: 7.2rem;
@@ -233,7 +244,7 @@
         margin-bottom: 10px;
     }
     .Aya-Flight_Card .Line1 , .Aya-Flight_Card .Line2 {
-        width: 13.5rem;
+        width: 13.8rem;
     }
     .Aya_Flight_Details_Final .part2 .span {
         font-size: 16px;
