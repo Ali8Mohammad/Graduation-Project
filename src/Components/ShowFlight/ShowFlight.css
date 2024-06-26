@@ -5,9 +5,8 @@
     border-radius: 16px;
     background-color: var(--second-text-color);
     box-shadow: 0px 4px 16px 0px #8DD3BB26;
-    position: absolute;
-    top: 425px;
-    left: 104px;
+    margin:  0 auto;
+    margin-top: -110px;
     }
     .MS-tabs{
         border-bottom: none;
@@ -19,21 +18,20 @@
         padding:0 64px 24px 0 ;
     }
     .MS-btnFlight{
-        width:141px;
         height:48px;
         padding: 8px 16px 8px 16px;
         border-radius: 4px;
         border: none;
         background-color: var(--main-bgcolor);
         font-size: var(  --xxsmall-font-size);
-        font-weight: 500;
+        font-weight: var(  --second-font-weight);
     }
     .MS_icon{
-        padding-right: 8px;
+        padding-right: 10px;
     }
     .MS-span{
-    font-weight: 600;
-    line-height: 19.5px;
+    font-weight: var(  --third-font-weight);
+    line-height: var(  --xxxsmall-line-hieght);
     }
     .MS-plus{
         padding-right: 4px;
@@ -44,6 +42,12 @@
         align-items: center;
         gap: 24px;
         padding-top: 32px;
+    }
+    .MS-right a{
+        text-decoration: none;
+        color: var(--main-text-color);
+        font-weight: var(  --second-font-weight);
+        font-size: var(  --xxsmall-font-size);
     }
     .MS-tabs .nav-link.active::after {
         content: "";
@@ -76,4 +80,24 @@
         top: 0;
         right: 32px;
       }
-      
+      @media (max-width:576px) {
+        .MS-showFlight{
+            width:90%;
+        }
+        .MS-textfields{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .MS-field{
+            width: 140px;
+        }
+        .MS-tabs .nav-link{
+            padding:10px;
+        }
+        .MS-border::before{
+            right:0px;
+        }
+        .MS-right{
+            flex-direction: column;
+        }
+      }

@@ -42,7 +42,7 @@ const data2=[ {img:"./src/assets/images/Travel-3.png",
   ]
   return (
     <>
- {/*} <section className='OS_Travel_Section'>
+ <section className='OS_Travel_Section'>
     <div className='OS_oone_Title'>
             <div className='OS_Title_Book'>
             <h3>Fall into travel</h3>
@@ -67,9 +67,9 @@ const data2=[ {img:"./src/assets/images/Travel-3.png",
  </>
 })}
          </Row>
-   </section>*/}
+   </section>
 <section className=''>
-   <div className='OS_one_Title'>
+   <div className='OS_one_Title MS-padding'>
             <div className='OS_Title_Book'>
             <h3>Fall into travel</h3>
             <p>Going somewhere to celebrate this season? Whether you’re going home or somewhere to roam, we’ve got the travel tools to get you to your  destination.</p>

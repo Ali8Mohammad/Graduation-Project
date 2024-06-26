@@ -131,7 +131,7 @@
 
 .OS-BackPacking {
     display: flex;
-    padding: 0px 104px;
+    padding: 0px 104px 120px 104px;
     flex-wrap: wrap;
 }
 
@@ -143,7 +143,6 @@
     width: 552px;
     height: 424px;
 }
-
 .OS-Back_Par {
     display: flex;
     justify-content: space-between;
@@ -241,7 +240,10 @@
     padding-left: 24px;
     padding-right: 20px;
 }
-
+.MS-padding {
+    display: flex;
+    padding: 0px 104px 24px 104px !important; 
+}
 @media screen and (max-width:1431px) {
     .OS-Travel4 {
         margin-top: 10px;
@@ -253,19 +255,11 @@
         padding-left: 0px;
     }
 }
-
-@media screen and (max-width:319px) {
-    .OS-BackPacking {
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width:1119px) {
     .OS-Travel3 {
         margin-top: 10px;
     }
 }
-
 @media screen and (max-width:807px) {
     .OS-Travel2 {
         margin-top: 10px;
@@ -282,5 +276,10 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+}
+@media screen and (max-width:319px) {
+    .OS-BackPacking {
+        flex-wrap: wrap;
     }
 }

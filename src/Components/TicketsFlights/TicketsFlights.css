@@ -1,0 +1,77 @@
+.OS-Title-Flight {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.OS-Titlee-Flight {
+    display: flex;
+}
+
+.OS-T-Flight {
+    font-size: var(--medium-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--olarge-line-hieght);
+    color: var(--black-color);
+    width: 306px;
+    height: 40px;
+}
+
+.OS-Paragraf-Flight {
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--main-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    color: var(--main-text-color);
+    width: 76px;
+    height: 17px;
+}
+
+.OS-chev-Flight {
+    width: 18px;
+    height: 18px;
+}
+
+.Tabs {
+    width: 100%;
+    background-color: var( --second-text-color);
+    border-radius: 12px;
+}
+
+.con {
+    padding: 104px;
+}
+
+.Tab-section {
+    background-color: var( --third-bgcolor);
+}
+
+.css-h0q0iv-MuiButtonBase-root-MuiTab-root {
+    max-width: 1440px!important;
+    min-height: 20px!important;
+    text-transform: capitalize!important;
+}
+
+.css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: var(--main-text-color)!important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+    background-color: var(--main-bgcolor)!important;
+    width: 583px!important;
+    margin-left: 30px!important;
+}
+
+.Tab {
+    width: 50%!important;
+    font-size: var( --xsmall-font-size)!important;
+    font-weight: var(--third-font-weight)!important;
+    color: var(--main-text-color)!important;
+}
+
+.tab1 {
+    border-right: 1px solid #D7E2EE!important;
+}
+
+.OS-FlightIcon {
+    transform: rotate(90deg);
+}

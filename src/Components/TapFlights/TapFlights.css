@@ -1,0 +1,126 @@
+.OS-Fl-Style {
+    display: flex;
+    height: 144px;
+    border-radius: 16px;
+    padding: 32px 24px 32px 24px;
+    background-color: var( --second-text-color);
+    margin-bottom: 16px;
+}
+
+.css-19kzrtu {
+    padding: 16px 0px!important;
+}
+
+.OS-Text-Style {
+    display: flex;
+    height: 60px;
+    border-right: 1px solid #D7E2EE;
+}
+
+.OS-Emirates-line img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    border: 0.5px solid var(--main-bgcolor);
+    padding: 10px;
+    margin-right: 32px;
+}
+
+.OS-Text-par {
+    opacity: 75%;
+    font-size: var( --xsmall-font-size);
+    font-weight: var( --main-font-weight);
+    line-height: var( --xxxsmall-line-hieght);
+    width: 112px;
+    height: 20px;
+    color: var(--main-text-color);
+}
+
+.OS-Text-number {
+    font-size: var( --small-font-size);
+    font-weight: var( --third-font-weight);
+    line-height: var(--xmedium-line-hieght);
+    width: max-content;
+    height: 24px;
+    color: var(--main-text-color);
+}
+
+.OS-Line-img {
+    display: flex;
+    align-items: center;
+    margin: 0px 16px 0px 16px;
+}
+
+.OS-Date-All {
+    display: flex;
+    margin-left: 24px;
+}
+
+.OS-Date-flex {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.OS-Text-para {
+    font-size: var( --xxxsmall-font-size);
+    font-weight: var( --third-font-weight);
+    line-height: var(--small-line-hieght);
+    color: var(--main-text-color);
+    opacity: 60%;
+    width: 69px;
+    height: 15px;
+}
+
+.OS-Text-date {
+    font-size: var( --xsmall-font-size);
+    font-weight: var(--second-font-weight);
+    line-height: var(--xxxsmall-line-hieght);
+    color: var(--main-text-color);
+    display: flex;
+    opacity: 100%;
+}
+
+.OS-HourIcon {
+    background-color: #D7E2EE;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+
+.OS-Date-padding {
+    padding: 0px 24px 0px 0px;
+    width: max-content;
+}
+
+.OS-Text-padding {
+    margin-top: -8px;
+}
+
+.OS-Flight-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.OS-btn1 {
+    width: 152px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: var(--main-bgcolor);
+    border: none;
+    margin-right: 10px;
+}
+
+.OS-btn2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid var(--main-bgcolor);
+    background-color: transparent;
+}

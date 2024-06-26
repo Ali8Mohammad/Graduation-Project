@@ -1,6 +1,5 @@
 .MS-newsletter{
     width:1232px;
-    height:305px;
     padding: 0px 24px 0px 24px;
     border-radius: var( --main-border-radius);
     background-color: var( --second-bgcolor);
@@ -8,25 +7,27 @@
     display: flex;
     justify-content: space-between;
     color: var(--second-text-color);
-    position: absolute;
-    left: 104px;
-    bottom: -2430px;
+    position: relative;
+    margin:  0 auto;
+    margin-bottom: -150px;
+    z-index: 10;
 }
 .MS-newsletter h2{
     width: 364px;
     padding: 24px  0;
-    font-size: 44px; 
-    font-weight: 700;
+    font-size:var(  --xlarge-font-size); 
+    font-weight: var(  --fourth-font-weight);
     line-height: 54px;
 }
 .MS-newsletter h6{
-font-size: 20px;
-font-weight: 700;
+font-size: var( --small-font-size);
+font-weight: var(  --fourth-font-weight);
 line-height: 25.26px;
+Opacity:80%;
 }
 .MS-newsletter p{
 opacity: 70%;
-font-size: 18px;
+font-weight: var(--second-font-weight);
 line-height: 19.5px;
 }
 .MS-inputnewsletter{
@@ -51,3 +52,37 @@ border: none;
     font-size: var( --xxsmall-font-size);
     font-weight: 600;
 }
+@media (max-width:  1200px) {
+    .MS-btnnewsletter{
+        margin: 10px 0;
+    }
+}
+@media (max-width:993px) and (min-width:768px) {
+    .MS-btnnewsletter{
+        margin-left: 16px;
+    }
+}
+@media (max-width: 992px) {
+    .MS-imgSubscribe{
+        width: 200px;
+    }
+    .MS-newsletter{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .MS-newsletter h2{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .MS-newsletter{
+        width: 90%;
+    }
+    .MS-inputnewsletter{
+        width: 80%;
+    }
+    .MS-newsletter h2{
+        font-size: var(  --medium-font-size);
+    }
+} 

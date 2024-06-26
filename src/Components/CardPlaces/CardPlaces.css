@@ -15,6 +15,8 @@
 }
 .MS-CardPlace h5{
     opacity: 70%;
+    font-weight: var(  --third-font-weight);
+    font-family: var(--main-font);
 }
 .MS-cardContent p{
 font-size: var(  --xxsmall-font-size);

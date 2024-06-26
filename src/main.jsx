@@ -32,7 +32,8 @@ import VerifyCode from './Pages/Auth/VerifyCode.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
-
+const head2 ='Helping Others';
+const className ='NM_Hero'
 const State = () => {
     const [isLoginActive, setIsLoginActive] = useState(true);
     const toggleButtons = () => {
@@ -74,8 +75,8 @@ const State = () => {
             children: [
                 {
                     path: "/",
-                    element: <LandingPage title={title}
-                        para={para} navButtons={navButtons} 
+                    element: <LandingPage head2={head2} title={title}
+                        para={para} navButtons={navButtons} className={className}
                         navButtonsForMobile={navButtonsForMobile} />,
                 },
                 {
