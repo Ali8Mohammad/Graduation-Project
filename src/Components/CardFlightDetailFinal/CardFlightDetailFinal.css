@@ -171,6 +171,25 @@
     width: 105rem;
     height: 3rem;
     gap: 24px;
+    position: relative;
+}
+.Aya_Flight_Details_Final .part4 .part4-2::before {
+    content: ".";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 100px;
+    bottom: 105px;
+    left: -15px;
+}
+.Aya_Flight_Details_Final .part4 .part4-2::after {
+    content: ".";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 100px;
+    bottom: 105px;
+    right: -20px;
 }
 .Aya_Flight_Details_Final .part4 .part4-3 {
     width: 15rem;
@@ -233,6 +252,12 @@
     }
     .Aya_Flight_Details_Final .part4 .part4-2 {
         padding: 0 50px;
+    }
+    .Aya_Flight_Details_Final .part4 .part4-2::before  {
+        left: 40px;
+    }
+    .Aya_Flight_Details_Final .part4 .part4-2::after {
+        right: 30px;
     }
 }
 @media(min-width : 768px) and (max-width : 991px) {
