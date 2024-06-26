@@ -1,0 +1,104 @@
+.MH-favorites-head {
+    padding: 135px 7% 0 7%;
+}
+.MH-favorites-head .MH-title {
+    font-family: var( --second-font);
+    font-weight: var( --fourth-font-weight);
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+.MH-favorites-head .MH-head-content {
+    display: flex;
+    position: relative;
+}
+.MH-head-content::before {
+    content: "";
+    width: 0%; 
+    border-bottom: 0; 
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    z-index: 1;
+  }
+  .MH-head-content.show-border-l::before {
+    content: "";
+    width: 46%;
+    border-bottom: 4px solid var(--main-bgcolor);
+    position: absolute;
+    left: 2%;
+    bottom: 0;
+    z-index: 1;
+  }
+  .MH-head-content.show-border-r::before {
+    content: "";
+    width: 46%;
+    border-bottom: 4px solid var(--main-bgcolor);
+    position: absolute;
+    left: 52%;
+    bottom: 0;
+    z-index: 1;
+  }
+.MH-favorites-head .MH-head-content .MH-head-left {
+    width: 50%;
+    background-color: var(  --second-text-color);
+    padding: 16px 24px 16px 24px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    height: 80px;
+    cursor: pointer;
+}
+.MH-favorites-head .MH-head-content .MH-head-left p {
+    font-family: var( --main-font);
+    font-weight: var( --third-font-weight);
+    font-size: var( --xsmall-font-size);
+    margin-bottom: 8px;
+}
+.MH-favorites-head .MH-head-content .MH-head-left span {
+    font-family: var(--main-font);
+    font-weight: var(  --main-font-weight);
+    font-size: var( --xxsmall-font-size);
+    line-height: 1.2;
+    opacity: .4;
+}
+.MH-favorites-head .MH-head-content .MH-head-right {
+    width: 50%;
+    background-color: var(  --second-text-color);
+    background-color: var(  --second-text-color);
+    padding: 16px 24px 16px 24px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+}
+.MH-favorites-head .MH-head-content .MH-head-right::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #D7E2EE;
+    height: 48px;
+    left: 0;   
+}
+.MH-favorites-head .MH-head-content .MH-head-right p {
+    font-family: var( --main-font);
+    font-weight: var( --third-font-weight);
+    font-size: var( --xsmall-font-size);
+    margin-bottom: 8px;
+}
+.MH-favorites-head .MH-head-content .MH-head-right span {
+    font-family: var(--main-font);
+    font-weight: var(  --main-font-weight);
+    font-size: var( --xxsmall-font-size);
+    line-height: 1.2;
+    opacity: .4;
+}
+@media (max-width:576px) {
+    .MH-head-content.show-border-l::before {
+        width: 41%;
+        left: 4%;
+    }
+    .MH-head-content.show-border-r::before {
+        width: 41%;
+        left: 54%;
+    }
+}

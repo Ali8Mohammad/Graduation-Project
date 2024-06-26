@@ -65,14 +65,20 @@ export default function ForgotPasswordForm({ facebook, google, apple, Back }) {
           <span></span>
         </div>
         <div className="NM_Account">
-          <div className="NM_Facebook">
-            <img src={facebook} alt="face book" />
+        <div className="NM_Facebook">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src={facebook} alt="face book" />
+            </a>
           </div>
           <div className="NM_Google">
-            <img src={google} alt="google" />
+              <a href="https://www.google.com/" target="_blank">
+                <img src={google} alt="google" />
+              </a>
           </div>
           <div className="NM_Apple">
-            <img src={apple} alt="apple" />
+              <a href="https://appleid.apple.com/account" target="_blank">
+                <img src={apple} alt="apple" />
+              </a>
           </div>
         </div>
       </div>

@@ -1,0 +1,10 @@
+
+.RH_FlightDetail{
+    background-color:var(--forth-bgcolor);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
