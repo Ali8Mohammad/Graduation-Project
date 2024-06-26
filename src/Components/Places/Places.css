@@ -1,12 +1,15 @@
 .MS-placesSection{
     width: 100%;
-    padding: 263px 0 80px 0;
+    padding: 80px 0;
 }
 .MS-placesCards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(350.33px,1fr));
     gap: 32px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .MS-pargraph{
     opacity: 75%;
@@ -17,10 +20,29 @@
     Padding:8px 16px 8px 16px;
     border: 1px solid var( --main-bgcolor);
     background-color: var(--second-text-color);
+    font-size:var(  --xxsmall-font-size) ;
+    font-weight: var(  --second-font-weight);
 }
 .MS-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
+}
+.MS-Head3{
+font-size: var(  --medium-font-size);
+font-weight: var(  --third-font-weight);
+font-family: var(--main-font);
+}
+@media (max-width:576px) {
+.MS-flex{
+    flex-direction: column;
+    align-items: center;
+}
+.MS-Head3{
+    text-align: center;
+}
+.MS-pargraph{
+    text-align: center;
+}
 }

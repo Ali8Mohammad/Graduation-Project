@@ -1,6 +1,6 @@
 import './CardHotelDetailFinal.css'
 import Card from 'react-bootstrap/Card';
-
+import imgLocation from './../../assets/images/Location.svg'
 const CardHotelDetailFinal = () => {
     return (
         <section className='Aya_Hotel_Details_Final'>
@@ -15,7 +15,7 @@ const CardHotelDetailFinal = () => {
                     <Card.Img className='image' src="./../src/assets/images/cardHotel.svg" />
                     <p className='part2-2 p'>
                         <p className='span1'>CVK Park Bosphorus Hotel Istanbul</p>
-                        <p className='span2'>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+                        <p className='span2'><img src={imgLocation} alt="Location" /> Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
                     </p>
                 </div>
             </div>
