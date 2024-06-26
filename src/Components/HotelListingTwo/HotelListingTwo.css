@@ -1,5 +1,5 @@
 .OS-Section-two {
-    padding: 10px 104px 64px 104px;
+    padding: 0px 6.5rem 4rem 6.5rem;
 }
 
 .OS-Line_Img img {
@@ -11,7 +11,7 @@
     font-weight: var(--fourth-font-weight);
     line-height: var(--omedium-line-hieght);
     color: var(--main-text-color);
-    padding-top: 64px;
+    padding-top: 4rem;
 }
 
 .OS-Paragraf-Two {
@@ -20,8 +20,8 @@
     line-height: var( --xxxsmall-line-hieght);
     color: var(--main-text-color);
     opacity: 75%;
-    padding-top: 16px;
-    padding-bottom: 32px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     width: 100%;
 }
 
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 .OS-One-review {
@@ -75,13 +75,13 @@
     border: 1px solid var(--main-bgcolor);
     width: 160px;
     height: 145px;
-    padding-left: 16px;
-    margin-left: 16px;
+    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 .OS-Twoo-review img {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .OS-Two-review-par {

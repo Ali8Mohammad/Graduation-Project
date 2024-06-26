@@ -1,5 +1,5 @@
     .OS-Section-three {
-        padding: 0px 104px;
+        padding: 0px 6.5rem;
     }
     
     .OS-Room-Big {
@@ -14,8 +14,8 @@
     }
     
     .OS-Room-av img {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         border-radius: 4px;
     }
     
@@ -28,8 +28,8 @@
         font-weight: var( --fourth-font-weight);
         line-height: var(--omedium-line-hieght);
         color: var(--main-text-color);
-        padding-top: 64px;
-        padding-bottom: 32px;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
     }
     
     .OS-ROOM-par {
@@ -41,7 +41,7 @@
         display: flex;
         align-items: center;
         margin: auto;
-        padding-left: 16px;
+        padding-left: 1rem;
         width: 27.9375rem;
     }
     
@@ -53,15 +53,15 @@
     }
     
     .OS-Btn-Room {
-        width: 150px;
-        height: 48px;
+        width: 9.375rem;
+        height: 3rem;
         border-radius: 4px;
         background-color: var( --main-bgcolor);
         border: none;
     }
     
     .line1 {
-        padding-top: 64px;
+        padding-top: 4rem;
     }
     
     @media screen and (max-width:1000px) {
@@ -76,7 +76,7 @@
     
     @media screen and (max-width:400px) {
         .OS-Section-three {
-            padding: 0px 32px;
+            padding: 0px 2rem;
         }
     }
     
