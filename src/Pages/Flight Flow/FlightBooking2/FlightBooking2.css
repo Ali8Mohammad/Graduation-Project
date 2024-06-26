@@ -1,0 +1,18 @@
+.MH-FlightBooking2 {
+    background-color: #FAFAFA;
+}
+.MH-FlightBooking2 nav {
+    background-color: white;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+}
+.MH-FlightBooking2 .NM_Start a{
+    color: black;
+}
+.MH-FlightBooking2 .NM_Start img{
+    color: black;
+}
+.MH-FlightBooking2 .MS-newsletter {
+    bottom: -1080px;
+}

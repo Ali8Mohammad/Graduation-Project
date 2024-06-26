@@ -1,0 +1,29 @@
+.MH-FlightBooking {
+    background-color: #FAFAFA;
+  
+}
+.MH-FlightBooking3 {
+    padding:135px 5% 0 5% ;
+}
+.MH-flight-content {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: center;
+}
+.MH-FlightBooking .Aya-path {
+    padding: 3rem 0;
+}
+
+ @media (max-width:1200px) {
+    .MH-FlightBooking .MH-FlightBooking3  .MH-flight-content .Aya_Flight_Details_Final{
+        margin-right: 0;
+    } 
+
+    .MH-FlightBooking .Aya-path {
+        width: 100%;
+        text-align: center  ;
+    }
+    
+ }
+
+    
