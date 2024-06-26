@@ -1,0 +1,335 @@
+.RH_Galary{
+    width: 1232px;
+    height: 174px;
+    gap: 24px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    
+   
+}
+.RH_title_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.RH_title_Galary{
+    width: 333px;
+    height: 30px;
+    font-family: var(--second-font);
+font-size: var(--second-medium-font-size);
+font-weight: var(--fourth-font-weight);
+color: var(--main-text-color);
+line-height: var(--xxmedium-line-hieght);
+
+
+}
+.RH_Container_check{
+    width: 380px;
+    height: 24px;
+    gap: 24px!important;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+  .RH_lable_check1{
+    
+font-family: var(--main-font);
+font-size: var(--xxsmall-font-size);
+font-weight: var(--second-font-weight);
+line-height:var(--xxsmall-line-hieght);
+color: var(--main-text-color);
+padding-right: 32px;
+
+  }*/
+  /*
+  .RH_lable_check2{
+    
+    font-family: var(--main-font);
+font-size: var(--xxsmall-font-size);
+font-weight: var(--second-font-weight);
+line-height:var(--xxsmall-line-hieght);
+color: var(--main-text-color);
+padding-right: 32px;
+
+  }
+
+
+  
+  .RH_lable_check3{
+    
+    font-family: var(--main-font);
+font-size: var(--xxsmall-font-size);
+font-weight: var(--second-font-weight);
+line-height:var(--xxsmall-line-hieght);
+color: var(--main-text-color);
+text-align: left;
+
+  }*/
+
+
+
+  
+
+  
+
+  .RH_G_array {
+    display: flex;
+    gap: 19px; /* Base gap size */
+    flex-wrap: wrap;
+}
+
+.RH_G_image {
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Cover the area without stretching the image */
+}
+
+.RH_C {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 19px;
+    flex-direction: row;
+    width: 100%; /* Ensure it takes full width */
+}
+
+
+/* FlightDeatailsGalary.css */
+/* Assuming you have a CSS file named Checkboxes.module.css */
+
+/*
+input[type='checkbox'] {
+  accent-color:var( --main-bgcolor);
+  border-radius: 3px;
+}*/
+
+.RH_lable_check {
+  font-family: var(--main-font);
+font-size: var(--xxsmall-font-size);
+font-weight: var(--second-font-weight);
+line-height:var(--xxsmall-line-hieght);
+color: var(--main-text-color);
+  display: block;
+  position: relative;
+  display: flex;
+  margin-left: 20px;
+
+
+}
+
+/* Hide the browser's default checkbox */
+.RH_lable_check input {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  padding-right: 3.5px;
+}
+
+/* Create a custom checkbox */
+.RH_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eeeeee02;
+  border: 2px solid #112211  ;
+  margin-left: -30px!important;
+  border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.RH_lable_check:hover input ~ .RH_checkmark {
+  background-color: #eeeeee02;
+}
+
+/* When the checkbox is checked, add a blue background */
+.RH_lable_check input:checked ~ .RH_checkmark {
+  background-color: orange;
+  border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.RH_checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.RH_lable_check input:checked ~ .RH_checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.RH_lable_check .RH_checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/* Media Query for smaller screens */
+
+
+
+@media (max-width:1352px) {
+ 
+  .RH_Galary{
+    width: auto;
+    margin: 0 auto;
+
+    margin-bottom: 40px!important;
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+}
+  
+ 
+
+
+
+@media (max-width:1312px) {
+ 
+  .RH_Galary{
+    width: auto;
+    margin: 0 auto;
+
+    margin-bottom: 200px!important;
+  
+
+  }
+}
+  
+
+@media (max-width: 1200px) {
+  .RH_Container_check {
+    width:auto;
+
+  }
+  .RH_Galary{
+    width: auto;
+    margin: 0 auto;
+
+  }
+}
+
+
+ 
+  @media (max-width:1352px) {
+ 
+    .RH_Container_check{
+    margin-bottom: 20px;
+  
+    }
+  }
+
+  @media (max-width:768px) {
+ 
+    .RH_Container_check{
+    margin-bottom: 20px;
+  
+    }
+  }
+
+  @media (max-width:500px) {
+ 
+    .RH_Container_check{
+    margin-bottom: 40px;
+  
+    }
+  }
+
+  @media (max-width:366px) {
+ 
+    .RH_Container_check{
+    margin-bottom: 40px;
+    margin-top: 20px;
+  
+    }
+  }
+
+  @media (max-width:786px) {
+ 
+    .RH_Galary{
+      width: auto;
+      margin: 0 auto;
+  
+      margin-bottom: 250px!important;
+    
+  
+    }
+  }
+    
+  @media (max-width:758px) {
+ 
+    .RH_Galary{
+      width: auto;
+      margin: 0 auto;
+  
+      margin-bottom: 380px!important;
+    
+  
+    }
+  }
+
+
+
+  @media (max-width:474px) {
+ 
+    .RH_Galary{
+      width: auto;
+      margin: 0 auto;
+  
+      margin-bottom: 680px!important;
+    
+  
+    }
+  }
+
+  @media (max-width:338px) {
+ 
+    .RH_Galary{
+      width: auto;
+      margin: 0 auto;
+  
+      margin-bottom: 1000px!important;
+    
+  
+    }
+  }
+
+  @media (max-width:330px) {
+ 
+    .RH_Galary{
+      width: auto;
+      margin: 0 auto;
+  
+      margin-bottom: 1300px!important;
+    
+  
+    }
+  }
+
+  @media (max-width:430px) {
+ 
+    .RH_lable_check {
+      font-size: 12px!important;
+        }
+
+        .RH_checkmark{
+          margin-left: -20px!important;
+        }
+  }
