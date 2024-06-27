@@ -1,0 +1,119 @@
+.OS-Section-two {
+    padding: 10px 104px 64px 104px;
+}
+
+.OS-Line_Img img {
+    width: 100%;
+}
+
+.OS-Text-Two {
+    font-size: var(--small-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var(--omedium-line-hieght);
+    color: var(--main-text-color);
+    padding-top: 64px;
+}
+
+.OS-Paragraf-Two {
+    font-size: var( --xsmall-font-size);
+    font-weight: var(--second-font-weight);
+    line-height: var( --xxxsmall-line-hieght);
+    color: var(--main-text-color);
+    opacity: 75%;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.OS-Divbig-review {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.OS-Div-review {
+    width: 166px;
+    height: 145px;
+    border-radius: 12px;
+    background-color: var(--main-bgcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+}
+
+.OS-One-review {
+    width: 86px;
+    height: 41px;
+}
+
+.OS-Par-review {
+    font-size: var( --xsmall-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: var( --xxxsmall-line-hieght);
+    color: var(--main-text-color);
+}
+
+.OS-Para-review {
+    font-size: var( --xxsmall-font-size);
+    font-weight: var(--second-font-weight);
+    line-height: var( --xxsmall-line-hieght);
+    color: var(--main-text-color);
+    display: flex;
+    padding-top: 4px;
+}
+
+.OS-Two-review {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.OS-Twoo-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 12px;
+    border: 1px solid var(--main-bgcolor);
+    width: 160px;
+    height: 145px;
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
+.OS-Twoo-review img {
+    width: 32px;
+    height: 32px;
+}
+
+.OS-Two-review-par {
+    font-size: var(--xsmall-font-size);
+    font-weight: var( --second-font-weight);
+    line-height: var(--xxxsmall-line-hieght);
+    color: var(--main-text-color);
+}
+
+@media screen and (max-width:1077px) {
+    .OS-Two-review {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width:912px) {
+    .OS-Twoo-review {
+        margin: 10px;
+    }
+    .OS-Line_Img img {
+        background-color: var(--main-text-color);
+    }
+}
+
+@media screen and (max-width:512px) {
+    .OS-Paragraf-Two {
+        width: 150%;
+        font-size: var(--small-font-size);
+        line-height: var(--omedium-line-hieght);
+    }
+    .OS-Line_Img img {
+        background-color: var(--main-text-color);
+        width: 150%;
+    }
+}

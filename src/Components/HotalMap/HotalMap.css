@@ -1,0 +1,121 @@
+.NM_Map,
+.NM_Amenities,
+.NM_Reviews {
+    margin: 0 var(--main-padding);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    padding: 64px 0;
+    border-top: 1px solid #11221140;
+    border-bottom: 1px solid #11221140;
+}
+
+.NM_Map h2,
+.NM_Amenities h2,
+.NM_Reviews h2 {
+    font-size: var(--small-font-size);
+    font-weight: var(--fourth-font-weight);
+    line-height: 25.26px;
+    height: 25px;
+
+}
+
+.NM_Line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.NM_btn {
+    background-color: var(--main-bgcolor);
+    border: none;
+    width: 189px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.NM_btn a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+}
+
+.NM_MapImg {
+    width: 100%;
+    height: 450px;
+    border-radius: var(--second-border-radius);
+    margin-bottom: 8px;
+}
+
+.NM_Address {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.NM_Address img {
+    width: 18px;
+    height: 18px;
+}
+
+.NM_Address p {
+    display: flex;
+    align-items: center;
+    height: 17px;
+    opacity: 0.75px;
+    margin-bottom: 0;
+}
+
+.NM_MapImg-desktop {
+    display: block;
+}
+
+.NM_MapImg-tab,
+.NM_MapImg-mobile {
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    .NM_MapImg-desktop {
+        display: none;
+    }
+
+    .NM_MapImg-tab {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .NM_Map,
+    .NM_Amenities,
+    .NM_Reviews {
+        margin: 0 var(--main-padding-home);
+    }
+
+    .NM_Address p {
+        height: max-content;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .NM_Line {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .NM_MapImg-tab {
+        display: none;
+    }
+
+    .NM_MapImg-mobile {
+        display: block;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:491px) {
+    .NM_Address {
+        align-items: start;
+    }
+}

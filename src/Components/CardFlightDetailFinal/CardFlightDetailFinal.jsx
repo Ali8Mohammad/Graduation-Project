@@ -15,7 +15,7 @@ const CardFlightDetailFinal = () => {
             <Card.Title className='title'>Return Wed, Dec 8</Card.Title>
             <span className='span'>2h 28m</span>
         </div>
-        <div className='part3 d-flex '>
+        <div className='part3 d-flex flex-wrap'>
             <div className="part3-1 d-flex">
                 <Card.Img className='image' src="./../src/assets/images/Emirates-line.png" />
                 <p className='p'>
@@ -23,7 +23,7 @@ const CardFlightDetailFinal = () => {
                     <span className='span2'>Airbus A320</span>
                 </p>
             </div>
-            <div className="part3-2">
+            <div className="part3-2 d-flex flex-wrap ">
                 <Card.Img className='image-airplane' src="./../src/assets/images/airplane.svg" />   
                 <Card.Img style={{color: "#D7E2EE" , height: "40px"}} className='line2' src="./../src/assets/images/Line2.svg" />   
                 <Card.Img className='image-Wifi' src="./../src/assets/images/Wifi.svg" />   

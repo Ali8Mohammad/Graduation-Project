@@ -5,3 +5,8 @@
     gap: 24px;
     padding-bottom: 70px;
 }
+@media (max-width: 992px) {
+    .MS-FlightAndHotel{
+        flex-wrap: wrap;
+    }
+}
