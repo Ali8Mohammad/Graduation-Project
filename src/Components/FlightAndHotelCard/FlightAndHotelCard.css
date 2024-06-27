@@ -36,17 +36,16 @@ z-index: 1;
 .MS-FlightHotelCard p{
     font-weight: var(  --main-font-weight);
     line-height: var( --xxxsmall-line-hieght);
-    width: 389px;
     }
-    .MS-FlightHotelCard .MS-iconbtn button{
-        width:141px;
+.MS-FlightHotelCard .MS-iconbtn button{
+        width:144px;
         height:48px;
         padding: 8px 16px 8px 16px;
         border-radius: 4px;
         border: none;
         background-color: var(--main-bgcolor);
         font-size: var(  --xxsmall-font-size);
-        font-weight: 500;
+        font-weight:var(  --second-font-weight);
     }
 .MS-FlightHotelCard P,.MS-FlightHotelCard button{
     z-index: 1;
@@ -57,4 +56,14 @@ z-index: 1;
 .MS-iconbtn img{
     width: 14px;
     padding-right:1px;
+}
+@media (max-width: 992px) {
+    .MS-FlightHotelCard{
+        max-width: 603.5px;
+    }
+}
+@media (max-width: 576px) {
+    .MS-FlightHotelCard{
+        width: 100%;
+    }
 }

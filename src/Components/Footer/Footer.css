@@ -1,6 +1,7 @@
 .NM_Footer{
+    font-family: var(--second-font);
     width: 100%;
-    padding: 218px var(--main-padding) 64px var(--main-padding);
+    padding: 218px 104px 64px 104px;
     background-color: var(--main-bgcolor);
     color: var(--main-text-color);
 }
@@ -48,6 +49,7 @@
     /* flex-wrap: wrap; */
 }
 .NM_Right h6{
+font-family:var(--second-font);
 font-size: var(--xsmall-font-size);
 font-weight: var(--fourth-font-weight);
 line-height: var(--medium-line-hieght);
@@ -56,6 +58,7 @@ margin-bottom: 16px;
 
 }
 .NM_Right p{
+font-family: var(--main-font);
 font-size: var(--xxsmall-font-size);
 font-weight: var(--second-font-weight);
 line-height: var(--xxsmall-line-hieght);
@@ -94,7 +97,7 @@ width: 100%;
         gap: 10px;
     }
     .NM_Footer{
-        padding: 218px var(--main-padding-home) 20px var(--main-padding-home);
+        padding: 218px 30px 20px 30px;
     }
 }
 @media screen and (max-width:857px){

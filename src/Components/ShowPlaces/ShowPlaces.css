@@ -1,0 +1,17 @@
+.MS-ShowPlaces p{
+    font-weight: 900;
+    font-weight: var( --third-font-weight);
+    font-size: var( --small-font-size);
+    margin: 0;
+}
+ .MS-field1{
+    width: 240px;
+}
+.MS-firstfield{
+    width: 416px;
+}
+@media (max-width: 576px) {
+    .MS-firstfield{
+        width: 240px;
+    }
+}

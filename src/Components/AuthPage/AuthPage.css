@@ -68,7 +68,14 @@
 a {
   cursor: pointer;
 }
-
+/* for large screen */
+@media screen and (min-width:1450px) {
+  .NM_AuthPage{
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+/* responsive */
 @media screen and (max-width:1300px) {
   .NM_AuthPage {
     flex-wrap: wrap;
