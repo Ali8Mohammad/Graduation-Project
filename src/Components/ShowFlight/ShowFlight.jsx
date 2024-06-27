@@ -1,5 +1,6 @@
 import "./ShowFlight.css"
-import * as React from 'react';
+import"./../../index.css"
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import Tab from 'react-bootstrap/Tab';
@@ -148,3 +149,4 @@ export default function ShowFlight() {
     </>
   )
 }
+ 
