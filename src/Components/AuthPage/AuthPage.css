@@ -7,19 +7,15 @@
 }
 
 .NM_ImageContainer {
-  /* height: 79.7%; */
-  /* 816 * 100 /1024 */
   height: 816px;
 }
 
 .NM_ImageContainer.signup {
-  width: 42.9%;
-  /* 486.42 * 100 /1440 -(140 *2) */
+  width: 488px;
 }
 
 .NM_ImageContainer.login {
-  width: 53.3%;
-  /* 618px * 100 /1440 -(140 *2) */
+  width: 618px;
 }
 
 .NM_FormContainer img {
@@ -28,8 +24,6 @@
 }
 
 .NM_FormContainer {
-  /* height: 83.3%; */
-  /* 853 * 100 /1024 */
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -38,13 +32,11 @@
 }
 
 .NM_FormContainer.login {
-  width: 44.1%;
-  /* 512px * 100 /1440 -(140 *2) */
+  width: 510px;
 }
 
 .NM_FormContainer.signup {
-  width: 55.17%;
-  /* 640 * 100 /1440 -(140 *2) */
+  width: 640px;
 }
 
 .NM_AuthPage.login .NM_FormContainer {
@@ -67,13 +59,6 @@
 
 a {
   cursor: pointer;
-}
-/* for large screen */
-@media screen and (min-width:1450px) {
-  .NM_AuthPage{
-    max-width: 1440px;
-    margin: auto;
-  }
 }
 /* responsive */
 @media screen and (max-width:1300px) {

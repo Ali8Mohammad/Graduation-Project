@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .NM_Hero {
     width: 100%;
     color: var(--second-text-color);
@@ -12,58 +13,123 @@
     flex-direction: column;
     align-items: center;
 }
-.NM_Hero h1,h2{
+
+.NM_Hero h1,
+h2 {
     margin-bottom: 0;
 }
-.NM_Hero h2{
-    width: 27.32%;  /* 377 *100 / 1380 */
+
+.NM_Hero h2 {
+    width: 27.32%;
+    /* 377 *100 / 1380 */
     height: 57px;
     font-size: var(--xxlarge-font-size);
     font-weight: var(--fourth-font-weight);
     line-height: var(--xxlarge-line-hieght);
-    margin-top:150px; /* 96 + 54 */
+    margin-top: 150px;
+    /* 96 + 54 */
 }
-.NM_Hero h1{
-    width: 54.6%;  /* 753 *100 / 1380 */
+
+.NM_Hero h1 {
+    width: 54.6%;
+    /* 753 *100 / 1380 */
     height: 101px;
     line-height: var(--xxxlarge-line-hieght);
     font-size: var(--xxxlarge-font-size);
     font-weight: var(--fourth-font-weight);
 
 }
-.NM_Hero p{
-    width: 22.5%;  /* 311 *100 / 1380 */
+
+.NM_Hero p {
+    width: 22.5%;
+    /* 311 *100 / 1380 */
     height: 24px;
     font-size: var(--small-font-size);
     font-weight: var(--third-font-weight);
-    line-height:var(--xmedium-line-hieght);
+    line-height: var(--xmedium-line-hieght);
     text-align: center;
 }
-@media screen and (max-width:1256px){
-    .NM_Hero p,.NM_Hero h1,.NM_Hero h2{
+
+@media screen and (max-width:1256px) {
+
+    .NM_Hero p,
+    .NM_Hero h1,
+    .NM_Hero h2 {
         width: 90%;
     }
-    .NM_Hero h1{
+
+    .NM_Hero h1 {
         font-size: 60px;
     }
 }
-@media screen and (max-width:632px){
-    .NM_Hero h1{
+
+@media screen and (max-width:632px) {
+    .NM_Hero h1 {
         font-size: 40px;
     }
-    .NM_Hero h2{
+
+    .NM_Hero h2 {
         font-size: 30px;
     }
 }
-@media screen and (max-width:406px){
-    .NM_Hero h1{
+
+@media screen and (max-width:406px) {
+    .NM_Hero h1 {
         font-size: 30px;
     }
-    .NM_Hero h2{
+
+    .NM_Hero h2 {
         font-size: 20px;
     }
-    .NM_Hero p{
+
+    .NM_Hero p {
         font-size: 16px;
     }
 }
 
+.NM_cssanimation,
+.NM_cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.NM_cssanimation span,
+.NM_cssanimation {
+    display: inline-block
+}
+
+.NM_leBlurInBottom {
+    animation-name: leBlurInBottom
+}
+
+.NM_leBlurInRight span {
+    animation-name: NM_leBlurInRight
+}
+
+.NM_leBlurInTop {
+    animation-name: leBlurInTop
+}
+
+@keyframes NM_leBlurInRight {
+    from {
+        transform: scaleX(0.2) translateX(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+@keyframes leBlurInTop {
+    from {
+        transform: scaleY(0.2) translateY(-100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+@keyframes leBlurInBottom {
+    from {
+        transform: scaleY(0.2) translateY(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}

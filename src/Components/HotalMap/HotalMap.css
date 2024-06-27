@@ -32,6 +32,7 @@
     width: 189px;
     height: 48px;
     border-radius: 4px;
+    transition:all .5s ease;
 }
 
 .NM_btn a {
@@ -40,6 +41,7 @@
     font-family: var(--main-font);
     font-size: var(--xxsmall-font-size);
     font-weight: var(--third-font-weight);
+    transition:all .5s ease;
 }
 
 .NM_MapImg {
@@ -76,7 +78,12 @@
 .NM_MapImg-mobile {
     display: none;
 }
-
+.NM_btn:hover a{
+    color:#fff;
+  }
+.NM_btn:hover{
+    transform: scale(.97);
+  }
 @media screen and (max-width:992px) {
     .NM_MapImg-desktop {
         display: none;

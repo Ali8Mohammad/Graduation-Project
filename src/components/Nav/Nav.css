@@ -11,7 +11,7 @@
     position: fixed;
     right: var(--main-padding-home);
     transition: background 0.3s ease, width 0.3s ease;
-    z-index: 100;
+    z-index:100;
 }
 .NM_NavBar.scrolled {
     background: rgba(0, 0, 0, 0.8);
@@ -77,11 +77,23 @@
     padding: 15.5px 32px 15.5px 0;
     background-color: transparent;
 }
-
 .NM_Signup {
     width: 104px;
     padding: 15.5px 24px;
     border-radius: 8px;
+    background-color: var(--second-text-color);
+}
+.NM_LoginN {
+    width: 73px;
+    padding: 15.5px 0 15.5px 0;
+    border-radius: 8px;
+    background-color: transparent;
+}
+.NM_SignupNn {
+    width: 104px;
+    padding: 15.5px 24px;
+    border-radius: 8px;
+    background-color: var(--second-text-color);
 }
 .NM_LinkLogin,.NM_LinkSignup{
     text-decoration: none;
@@ -206,5 +218,193 @@
     .NM_NavBar{
         width: calc(100% - 14px);
         left: var(--small-padding);
+    }
+}
+/* ------------------------------------------------Whitebg nav------------------------------------------------ */
+/* ------------------------------------------------Whitebg nav------------------------------------------------ */
+/* ------------------------------------------------Whitebg nav------------------------------------------------ */
+.AM_Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--fourth-bgcolor);
+    padding: 36px var(--main-padding);
+    height: 96px;
+    font-size: var(--xxsmall-font-size);
+    font-weight: var(--third-font-weight);
+    line-height: var(--xxsmall-line-hieght);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: var(--main-text-color);
+    box-shadow: 0px 4px 16px 0px #1122110D;
+}
+
+.AM_Start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 242px;
+    min-height: 24px;
+    gap: 32px;
+    opacity: 0px;
+}
+
+.AM_FindFlight {
+    min-width: 79px;
+    min-height: 17px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+}
+
+.AM_Plane {
+    display: inline-block;
+    padding-right: 4.75px;
+    padding-bottom: 10px;
+}
+
+.AM_FindStays {
+    min-width: 103px;
+    min-height: 24px;
+    gap: 4px;
+    opacity: 0px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+
+}
+
+.AM_Bed {
+    display: inline-block;
+    min-width: 21px;
+    min-height: 16.5px;
+    margin-bottom: 8.5px;
+    margin-left: 1px;
+}
+
+.AM_Logo {
+    min-width: 110.36px;
+    min-height: 36px;
+    margin-right: 43px;
+    margin-bottom: 10px;
+}
+
+.AM_Buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    min-width: 260px;
+    min-height: 45px;
+    /* gap: 32px; */
+    opacity: 0px;
+}
+
+.AM_Buttons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.AM_Favourite {
+    width: 75px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    padding-left: 4px;
+}
+
+.AM_Client {
+    width: 55px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    padding-left: 4px;
+}
+
+.FavouritesImg {
+    width: 19.5px;
+    height: 18px;
+    top: 3px;
+    left: 2.25px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.ClientImg {
+    width: 45px;
+    height: 45px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.AM_dash {
+    width: 5px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+}
+.arrowDown {
+    position: absolute;
+    right: 9.5rem;
+    top: 3.6rem;
+    width: 14px;
+    height: 14px;
+}
+.AM_End.open {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 10rem;
+    align-items: start;
+    gap: 2rem;
+    background-color: #ffffffee;
+    width: 14rem;
+    border-top-left-radius: 30px;
+    box-shadow: -31px 0px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: black !important;
+}
+.AM_End.open .NM_Link,
+.AM_End.open .AM_Link{
+    text-decoration: none;
+    color: var(--main-text-color);
+    position: relative;
+}
+.AM_End.open .AM_Link {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 110%;
+    justify-content: space-between;
+}
+.user-profile {
+    padding-top: 173px;
+}
+/* ------------------------------------------------Whitebg nav------------------------------------------------ */
+/* ------------------------------------------------Whitebg nav------------------------------------------------ */
+/* ------------------------------------------------Whitebg nav------------------------------------------------ */
+
+/* Responsive */
+/* Responsive */
+@media screen and (min-width: 993px) {
+    .NM_ToggleButton {
+        display: none;
     }
 }
