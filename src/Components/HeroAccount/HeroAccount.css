@@ -4,7 +4,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    width: 85.56%;
     height: 350px;
     margin: 135px 104px 0px 104px;
     border-radius:var(--third-border-radius);
@@ -66,5 +65,20 @@ font-weight: var(--main-font-weight);
 line-height: var(    --xxxsmall-line-hieght);
 opacity: 75%;
 }
+@media (max-width: 992px) {
+     .MS-heroAccountImg{
+        margin: 135px 30px 0px 30px;
+    }
+}
+@media (max-width:768px) {
+
+    .MS-heroAccountImg button{
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+    }
+
 
 

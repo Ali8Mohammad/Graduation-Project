@@ -75,3 +75,32 @@ font-weight: var( --fourth-font-weight);
   .MS-accountbtn1{
     margin-right:8px ;
   }
+  @media (max-width: 1300px){
+    .MS-TabAccount .nav-link{
+      width: 200px;
+    }
+    .MS-TabAccount{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  @media (max-width: 992px){
+    .MS-TabAccount .nav-link{
+      width:150px;
+  }
+  .MS-TabContainer{
+    padding: 0 30px; 
+  }
+  }
+  @media (max-width: 768px){
+    .MS-accountCard{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .MS-accountbtn{
+      margin-top: 16px;
+    }
+    .MS-TabAccount .nav-link{
+        width:100px;
+    }
+  }
