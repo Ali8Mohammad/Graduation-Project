@@ -25,6 +25,9 @@ import HotelBooking from './Pages/Hotel Flow/HotelBooking/HotelBooking.jsx';
 import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
 import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
 import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
+import FlightBooking2 from './Pages/Flight Flow/FlightBooking2/FlightBooking2.jsx';
+import FlightBooking3 from './Pages/Flight Flow/FlightBooking3/FlightBooking3.jsx';
+import HotelBookingpage4 from './Pages/Hotel Flow/Hotel-Booking-page4/HotelBookingpage4.jsx';
 import Authenticate from './Pages/Auth/Authenticate.jsx';
 import Login from './Pages/Auth/Login.jsx';
 import SignUp from './Pages/Auth/SignUp.jsx';
@@ -34,11 +37,13 @@ import AddPayment from './Pages/Auth/AddPayment.jsx';
 import VerifyCode from './Pages/Auth/VerifyCode.jsx';
 import favourite from './assets/images/favourites.svg';
 import client from './assets/images/Client-1.png';
-import arrow from './assets/images/Arrow_Down.svg';
+import arrow from './assets/images/Arrow_Down.svg'
+import HotelBooking2 from './Pages/Hotel Flow/Hotel-Booking-page2/HotelBooking2.jsx';
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
-
+const head2 ='Helping Others';
+const className ='NM_Hero'
 const State = () => {
     const [isLoginActive, setIsLoginActive] = useState(true);
     const [currentPage, setCurrentPage] = useState('landingpage');
@@ -60,6 +65,7 @@ const State = () => {
     const NM_Signup2 = isLoginActive ? 'NM_Signup' : 'NM_Login';
     const NM_LinkLog = isLoginActive ? 'NM_LinkLogin' : 'NM_LinkSignup';
     const NM_LinkSign = isLoginActive ? 'NM_LinkSignup' : 'NM_LinkLogin';
+
 
     const Navlinks = ({ type, className, linkTo, linkText, imgSrc, imgAlt, onClick, classNameLink, afterImage, arrowAlt, arrowclass, textClass, imgClass }) => {
         if (type === 'button') {
@@ -141,6 +147,7 @@ const State = () => {
         );
     };
 
+    );
     const navButtonsForMobile = (
         <>
             <li className={currentPage === 'landingpage' ? "" : 'd-none'}>
@@ -160,6 +167,7 @@ const State = () => {
             <li className={currentPage === 'landingpage' ? 'd-none': 'user-profile'}><img src={client} alt="" /></li>
         </>
     );
+
 
     const navButtons = (showAccountButtons, isLandingPage) => (
         <Navbuttons toggleButtons={toggleButtons} favourite={favourite} client={client} showAccountButtons={showAccountButtons} isLandingPage={isLandingPage} />

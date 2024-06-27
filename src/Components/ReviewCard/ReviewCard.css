@@ -20,6 +20,8 @@
 }
 .MS-ReviewCard h3{
     line-height: var( --xxmedium-line-hieght);
+    font-size: var(  --second-medium-font-size);
+    font-weight: var(  --fourth-font-weight);
 }
 .MS-ReviewCard .MS-pargraph{
     font-size: var(  --xxsmall-font-size);
@@ -46,9 +48,22 @@
 }
 .MS-textright{
     text-align: right;
+}
+.MS-head6{
     font-size: var(  --xxsmall-font-size);
     font-weight: var(  --fourth-font-weight);
 }
 .MS-imgReview{
     padding-top: 40px;
+}
+@media (max-width:576px) {
+    .MS-ReviewCard::after{
+        display: none;
+    }
+    .MS-ReviewCard{
+        width: 300px;
+    }
+    .MS-imgReview{
+        width: 250px;
+    }
 }

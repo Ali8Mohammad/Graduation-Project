@@ -11,6 +11,7 @@ import Places from '../../Components/Places/Places';
 import FlightAndHotel from '../../Components/FlightAndHotel/FlightAndHotel';
 import Reviewes from '../../Components/Reviewes/Reviewes';
 
+
 export default function LandingPage({ title, para, navButtons, navButtonsForMobile, showTabs}) {
     return (
         <section className='NM_LandingPage'>

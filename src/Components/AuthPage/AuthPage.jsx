@@ -1,7 +1,8 @@
 import React from 'react';
 import './AuthPage.css';
 import ImageSlider from '../ImageSlider/ImageSlider';
-// const {NMGroup} = '../../src/assets/images/NMGroup.svg';
+
+const {NMGroup} = '../../src/assets/images/NMGroup.svg';
 const facebook = "../../src/assets/images/NMfacebook.svg";
 const google = "../../src/assets/images/NMgoogle.svg";
 const apple = "../../src/assets/images/NMapple.svg";
@@ -23,5 +24,4 @@ const AuthPage = ({ FormComponent, isSignUp, isAddPayment }) => {
 };
 
 export default AuthPage;
-
 

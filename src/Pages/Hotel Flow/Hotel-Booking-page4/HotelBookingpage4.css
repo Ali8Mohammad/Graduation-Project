@@ -1,0 +1,16 @@
+.MH-HotelBooking {
+    background-color: #fafafa;
+}
+.MH-HotelBooking .MH-main2-title {
+    text-align: right;
+}
+.MH-HotelBooking .MH-main2-title p {
+   margin-bottom: 0;
+}
+.MH-HotelBooking .MH-content2 p {
+    color:#71AA27;
+    margin-bottom: 16px;
+}
+.MH-HotelBooking .MS-newsletter {
+    bottom: -1100px;
+}

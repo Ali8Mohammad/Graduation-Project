@@ -1,0 +1,91 @@
+.MH-add-card {
+    margin: 0 0 40px 0px;
+    padding: 16px;
+    width: 750px;
+    height: 316px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px 0px #1122110D;
+    background-color: white;
+    padding: 16px;
+}
+
+.MH-add-card  .MH-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+.MH-head img {
+    margin-right: 16px;
+    cursor: pointer;
+}
+.MH-add-card  .MH-head .MH-head-content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+}
+.MH-add-card  .MH-head .MH-head-content1 p {
+    margin-bottom: -5px;
+    font-weight: var(--fourth-font-weight);
+    font-family: var( --second-font);
+
+}
+.MH-add-card  .MH-head .MH-head-content1 span {
+    padding-left: 8px;
+    font-family: var(--main-font);
+    font-weight: var( --main-font-weight);
+    font-size: 14px;
+}
+.MH-addcard-footer {
+    width: 100%;
+    height: 180px;
+    border: 2px dashed orange;
+    border-radius: 15px;
+     Padding :16px 24px 16px 24px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.MH-addcard-footer .MH-circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 2px solid var(--main-bgcolor);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.MH-addcard-footer .MH-circle button {
+    border: none;
+    font-size:35px ;
+    background-color: white;
+    color:var(--main-bgcolor) ;
+}
+.MH-addcard-footer p {
+    font-family: var(--main-font);
+    font-weight: var(--second-font-weight);
+    font-size: 12px;
+}
+@media (max-width:1200px) {
+    .MH-add-card {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .MH-add-card .MH-head .MH-head-content1 {
+        justify-content: start;
+    }
+    .MH-add-card .MH-head {
+        padding:10px ;
+    }
+    .MH-head p {
+        margin: 0;
+    }
+    }  
+

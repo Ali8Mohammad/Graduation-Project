@@ -8,13 +8,13 @@
     --bs-gutter-y: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 5rem ; 
 }
 .FlightBooking {
     background: #FAFAFA;
 }
 .FlightContainer {
-    width: 750px;
+    width: 46.875rem;
 }
 @media (max-width : 1310px) {
     .FlightBookingRow {
@@ -22,28 +22,40 @@
         flex-direction: column-reverse;
     }
 }
-@media (max-width : 992px) {
+@media(min-width : 992px) and (max-width : 1310px) {
+    .FlightContainer {
+        width: 56.25rem;
+    }
+}
+@media(min-width : 768px) and (max-width : 991px) {
     .FlightBookingRow {
-        padding: 0 30px;
+        padding: 0 1.875rem;
+    }
+    .FlightContainer {
+        width: 44.8rem;
     }
 }
-@media (max-width : 810px) {
+@media(min-width : 576px) and (max-width : 767px) {
+    .FlightBookingRow {
+        padding: 0 1.875rem;
+    }
     .FlightContainer {
-        width: 700px;
+        width: 32rem;
     }
 }
-@media(min-width : 679px) and (max-width : 756px) {
+@media(min-width : 400px) and (max-width : 575px) {
+    .FlightBookingRow {
+        padding: 0 1.875rem;
+    }
     .FlightContainer {
-        width: 620px;
+        width: 21rem;
     }
 }
-@media(min-width : 567px) and (max-width : 678px)  {
-    .FlightContainer {
-        width: 500px;
+@media(min-width : 320px) and (max-width : 399px) {
+    .FlightBookingRow {
+        padding: 0 1.875rem;
     }
-}
-@media(min-width : 320px) and (max-width : 566px) {
     .FlightContainer {
-        width: 265px;
+        width: 16.5rem;
     }
 }
