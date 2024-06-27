@@ -209,6 +209,8 @@
     font-weight: var(--third-font-weight);
     line-height: var(--xxsmall-line-hieght);
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100;
     color: var(--main-text-color);
     box-shadow: 0px 4px 16px 0px #1122110D;
@@ -354,10 +356,20 @@
     backdrop-filter: blur(10px);
     color: black !important;
 }
-.AM_End.open .NM_Link {
+.AM_End.open .NM_Link,
+.AM_End.open .AM_Link{
     text-decoration: none;
     color: var(--main-text-color);
     position: relative;
+}
+.AM_End.open .AM_Link {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 110%;
+    justify-content: space-between;
+}
+.user-profile {
+    padding-top: 173px;
 }
 /* ------------------------------------------------Whitebg nav------------------------------------------------ */
 /* ------------------------------------------------Whitebg nav------------------------------------------------ */
@@ -365,14 +377,14 @@
 
 /* Responsive */
 /* Responsive */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
     .NM_ToggleButton {
         display: none;
     }
 }
 
 @media screen and (max-width:992px) {
-
+    
     .NM_Start,
     .NM_Buttons, .AM_Start, .AM_Buttons {
         display: none;

@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
+    BrowserRouter as Router,
+    Route,
+    Routes,
+    Link,
+    useLocation
+} from 'react-router-dom';
 import './index.css';
 import './Components/Nav/Nav.css';
 import App from './App.jsx';
@@ -22,7 +25,6 @@ import HotelBooking from './Pages/Hotel Flow/HotelBooking/HotelBooking.jsx';
 import Favorites from './Pages/Hotel Flow/Favorites/Favorites.jsx';
 import AccountFlow from './Pages/Account Flow/AccountFlow.jsx';
 import MyAccount from './Pages/Account Flow/MyAccount/MyAccount.jsx';
-import { Link } from 'react-router-dom';
 import Authenticate from './Pages/Auth/Authenticate.jsx';
 import Login from './Pages/Auth/Login.jsx';
 import SignUp from './Pages/Auth/SignUp.jsx';
@@ -39,9 +41,21 @@ const para = 'Special offers to suit your plan';
 
 const State = () => {
     const [isLoginActive, setIsLoginActive] = useState(true);
+    const [currentPage, setCurrentPage] = useState('landingpage');
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setCurrentPage('landingpage');
+        } else {
+            setCurrentPage('otherpage');
+        }
+    }, [location.pathname]);
+
     const toggleButtons = () => {
         setIsLoginActive(prevState => !prevState);
     };
+
     const NM_Login2 = isLoginActive ? 'NM_Login' : 'NM_Signup';
     const NM_Signup2 = isLoginActive ? 'NM_Signup' : 'NM_Login';
     const NM_LinkLog = isLoginActive ? 'NM_LinkLogin' : 'NM_LinkSignup';
@@ -99,7 +113,7 @@ const State = () => {
                         <Navlinks
                             type="list"
                             className="AM_Link"
-                            linkTo="/favorites"
+                            linkTo="favorites"
                             imgSrc={favourite}
                             imgAlt="favourite"
                             linkText="Favourites"
@@ -129,14 +143,21 @@ const State = () => {
 
     const navButtonsForMobile = (
         <>
-            <li>
+            <li className={currentPage === 'landingpage' ? "" : 'd-none'}>
                 <Link className='NM_Link' to="/auth/login" rel="noopener noreferrer"> Login
                 </Link>
             </li>
-            <li>
+            <li className={currentPage === 'landingpage' ? '' : 'd-none'}>
                 <Link className='NM_Link' to="/auth" rel="noopener noreferrer"> Sign Up
                 </Link>
             </li>
+            <li className={currentPage === 'landingpage' ? 'd-none' : ''}>
+                <Link className='AM_Link'><img src={favourite} alt="" />Favourites</Link>
+            </li>
+            <li className={currentPage === 'landingpage' ? 'd-none' : ''}>
+                <Link className='AM_Link'>John D.</Link>
+            </li>
+            <li className={currentPage === 'landingpage' ? 'd-none': 'user-profile'}><img src={client} alt="" /></li>
         </>
     );
 
@@ -144,119 +165,70 @@ const State = () => {
         <Navbuttons toggleButtons={toggleButtons} favourite={favourite} client={client} showAccountButtons={showAccountButtons} isLandingPage={isLandingPage} />
     );
 
-    const router = createBrowserRouter([
-        {
-            path: "/",
-            element: <App />,
-            children: [
-                {
-                    path: "/",
-                    element: (
+    return (
+        <React.StrictMode>
+            <Routes>
+                <Route path="/" element={<App />}>
+                    <Route index element={
                         <LandingPage
                             title={title}
                             para={para}
                             navButtons={navButtons(false, true)}
                             navButtonsForMobile={navButtonsForMobile}
                         />
-                    )
-                },
-                {
-                    path: "flightflow",
-                    element: <FlightFlow />,
-                    children: [
-                        {
-                            path: "",
-                            element: <FlightListing navButtons={navButtons(true, false)} />,
-                        },
-                        {
-                            path: "listing",
-                            element: <FlightListing />,
-                        },
-                        {
-                            path: "detail",
-                            element: <FlightDetail />,
-                        },
-                        {
-                            path: "booking",
-                            element: <FlightBooking />,
-                        },
-                    ]
-                },
-                {
-                    path: "hotelflow",
-                    element: <HotelFlow />,
-                    children: [
-                        {
-                            path: "",
-                            element: <HotelSearch />,
-                        },
-                        {
-                            path: "listing",
-                            element: <HotelListing />,
-                        },
-                        {
-                            path: "detail",
-                            element: <HotelDetail />,
-                        },
-                        {
-                            path: "booking",
-                            element: <HotelBooking />,
-                        },
-                        {
-                            path: "favorites",
-                            element: <Favorites />,
-                        },
-                    ]
-                },
-                {
-                    path: "myaccount",
-                    element: <AccountFlow />,
-                    children: [
-                        {
-                            path: "",
-                            element: <MyAccount />,
-                        }
-                    ]
-                },
-                {
-                    path: "auth",
-                    element: <Authenticate />,
-                    children: [
-                        {
-                            path: "",
-                            element: <SignUp />,
-                        },
-                        {
-                            path: "login",
-                            element: <Login />,
-                        },
-                        {
-                            path: "new_password",
-                            element: <NewPassword />,
-                        },
-                        {
-                            path: "forget_password",
-                            element: <ForgetPassword />,
-                        },
-                        {
-                            path: "add_payment",
-                            element: <AddPayment />,
-                        },
-                        {
-                            path: "verify_code",
-                            element: <VerifyCode />,
-                        },
-                    ]
-                },
-            ]
-        },
-    ]);
-
-    return (
-        <React.StrictMode>
-            <RouterProvider router={router} />
+                    } />
+                    <Route path="flightflow" element={<FlightFlow />}>
+                        <Route index element={
+                            <FlightListing
+                                navButtons={navButtons(true, false)}
+                                navButtonsForMobile={navButtonsForMobile}
+                            />
+                        } />
+                        <Route path="listing" element={
+                            <FlightListing 
+                                navButtons={navButtons(true, false)}
+                                navButtonsForMobile={navButtonsForMobile}
+                                />
+                            } />
+                        <Route path="detail" element={
+                            <FlightDetail  
+                                navButtons={navButtons(true, false)}
+                                navButtonsForMobile={navButtonsForMobile}
+                                />
+                            } />
+                        <Route path="booking" element={
+                            <FlightBooking 
+                                navButtons={navButtons(true, false)}
+                                navButtonsForMobile={navButtonsForMobile}
+                            />
+                            } />
+                    </Route>
+                    <Route path="hotelflow" element={<HotelFlow />}>
+                        <Route index element={<HotelSearch />} />
+                        <Route path="listing" element={<HotelListing />} />
+                        <Route path="detail" element={<HotelDetail />} />
+                        <Route path="booking" element={<HotelBooking />} />
+                        <Route path="favorites" element={<Favorites />} />
+                    </Route>
+                    <Route path="myaccount" element={<AccountFlow />}>
+                        <Route index element={<MyAccount />} />
+                    </Route>
+                    <Route path="auth" element={<Authenticate />}>
+                        <Route index element={<SignUp />} />
+                        <Route path="login" element={<Login />} />
+                        <Route path="new_password" element={<NewPassword />} />
+                        <Route path="forget_password" element={<ForgetPassword />} />
+                        <Route path="add_payment" element={<AddPayment />} />
+                        <Route path="verify_code" element={<VerifyCode />} />
+                    </Route>
+                </Route>
+            </Routes>
         </React.StrictMode>
     );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<State />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <Router>
+        <State />
+    </Router>
+);
