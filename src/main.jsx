@@ -11,13 +11,13 @@ import {
 import './index.css';
 import './Components/Nav/Nav.css';
 import App from './App.jsx';
+import LandingPage from './Pages/LandingPage/LandingPage.jsx';
+import FlightFlow from './Pages/Flight Flow/FlightFlow.jsx';
+import HotelFlow from './Pages/Hotel Flow/HotelFlow.jsx';
 import FlightsSearch from './Pages/Flight Flow/FlightsSearch/FlightsSearch.jsx';
 import FlightListing from './Pages/Flight Flow/FlightListing/FlightListing.jsx';
 import FlightDetail from './Pages/Flight Flow/FlightDetail/FlightDetail.jsx';
 import FlightBooking from './Pages/Flight Flow/FlightBooking/FlightBooking.jsx';
-import LandingPage from './Pages/LandingPage/LandingPage.jsx';
-import FlightFlow from './Pages/Flight Flow/FlightFlow.jsx';
-import HotelFlow from './Pages/Hotel Flow/HotelFlow.jsx';
 import HotelSearch from './Pages/Hotel Flow/HotelSearch/HotelSearch.jsx';
 import HotelListing from './Pages/Hotel Flow/HotelListing/HotelListing.jsx';
 import HotelDetail from './Pages/Hotel Flow/HotelDetail/HotelDetail.jsx';
@@ -42,8 +42,8 @@ import HotelBooking2 from './Pages/Hotel Flow/Hotel-Booking-page2/HotelBooking2.
 
 const title = 'LIVE & TRAVEL';
 const para = 'Special offers to suit your plan';
-const head2 ='Helping Others';
-const className ='NM_Hero'
+const className = 'NM_Hero'
+const head2 = 'Helping Others';
 const State = () => {
     const [isLoginActive, setIsLoginActive] = useState(true);
     const [currentPage, setCurrentPage] = useState('landingpage');
@@ -82,7 +82,7 @@ const State = () => {
                     <Link to={linkTo} onClick={onClick}>
                         {imgSrc && <img className={imgClass} src={imgSrc} alt={imgAlt} />}
                         {linkText && <span className={textClass}>{linkText}</span>}
-                        {afterImage && <img className={arrowclass} src={afterImage} alt={arrowAlt}/>}
+                        {afterImage && <img className={arrowclass} src={afterImage} alt={arrowAlt} />}
                     </Link>
                 </li>
             );
@@ -115,18 +115,18 @@ const State = () => {
                     </>
                 ) : null}
                 {showAccountButtons && (
-                  <>
+                    <>
                         <Navlinks
                             type="list"
                             className="AM_Link"
-                            linkTo="favorites"
+                            linkTo="/hotelflow/favorites"
                             imgSrc={favourite}
                             imgAlt="favourite"
                             linkText="Favourites"
                             textClass="AM_Favourite"
                             imgClass="FavouritesImg"
-                            />
-                            <span className='AM_dash'>|</span>
+                        />
+                        <span className='AM_dash'>|</span>
                         <Navlinks
                             type="list"
                             className="AM_Link"
@@ -134,7 +134,7 @@ const State = () => {
                             imgSrc={client}
                             imgAlt="John D."
                             linkText="John D."
-                            onClick={() => {}}
+                            onClick={() => { }}
                             afterImage={arrow}
                             arrowAlt={"arrow"}
                             arrowclass={'arrowDown'}
@@ -146,8 +146,6 @@ const State = () => {
             </>
         );
     };
-
-    );
     const navButtonsForMobile = (
         <>
             <li className={currentPage === 'landingpage' ? "" : 'd-none'}>
@@ -159,12 +157,14 @@ const State = () => {
                 </Link>
             </li>
             <li className={currentPage === 'landingpage' ? 'd-none' : ''}>
-                <Link className='AM_Link'><img src={favourite} alt="" />Favourites</Link>
+                <Link className='AM_Link' to="/hotelflow/favorites">
+                <img src={favourite} alt="" />Favourites</Link>
             </li>
             <li className={currentPage === 'landingpage' ? 'd-none' : ''}>
                 <Link className='AM_Link'>John D.</Link>
             </li>
-            <li className={currentPage === 'landingpage' ? 'd-none': 'user-profile'}><img src={client} alt="" /></li>
+            <li className={currentPage === 'landingpage' ? 'd-none' : 'user-profile'}>
+            <img src={client} alt="" /></li>
         </>
     );
 
@@ -179,6 +179,8 @@ const State = () => {
                 <Route path="/" element={<App />}>
                     <Route index element={
                         <LandingPage
+                            head2 ={head2}
+                            className={className}
                             title={title}
                             para={para}
                             navButtons={navButtons(false, true)}
@@ -187,29 +189,29 @@ const State = () => {
                     } />
                     <Route path="flightflow" element={<FlightFlow />}>
                         <Route index element={
-                            <FlightListing
+                            <FlightsSearch
                                 navButtons={navButtons(true, false)}
                                 navButtonsForMobile={navButtonsForMobile}
                             />
                         } />
                         <Route path="listing" element={
-                            <FlightListing 
-                                navButtons={navButtons(true, false)}
-                                navButtonsForMobile={navButtonsForMobile}
-                                />
-                            } />
-                        <Route path="detail" element={
-                            <FlightDetail  
-                                navButtons={navButtons(true, false)}
-                                navButtonsForMobile={navButtonsForMobile}
-                                />
-                            } />
-                        <Route path="booking" element={
-                            <FlightBooking 
+                            <FlightListing
                                 navButtons={navButtons(true, false)}
                                 navButtonsForMobile={navButtonsForMobile}
                             />
-                            } />
+                        } />
+                        <Route path="detail" element={
+                            <FlightDetail
+                                navButtons={navButtons(true, false)}
+                                navButtonsForMobile={navButtonsForMobile}
+                            />
+                        } />
+                        <Route path="booking" element={
+                            <FlightBooking
+                                navButtons={navButtons(true, false)}
+                                navButtonsForMobile={navButtonsForMobile}
+                            />
+                        } />
                     </Route>
                     <Route path="hotelflow" element={<HotelFlow />}>
                         <Route index element={<HotelSearch />} />

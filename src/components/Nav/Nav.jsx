@@ -30,10 +30,10 @@ export default function Navigation({ buttons,navMobile,page }) {
   return (
     <nav className={`${isScrolled ? 'scrolled' :''} ${page === "landingpage" ? "NM_NavBar" : "AM_Navbar"}`}>
       <div className={page === 'landingpage' ? 'NM_Start' : 'AM_Start'}>
-        <Link to={"flightflow"} className={page === "landingpage" ? 'NM_FindFlight' : "AM_FindFlight"} rel="noopener noreferrer">
+        <Link to={"/flightflow"} className={page === "landingpage" ? 'NM_FindFlight' : "AM_FindFlight"} rel="noopener noreferrer">
           <img className={page === 'landingpage' ? '' : 'AM_Plane'} src={page === "landingpage" ? plane : blackPlane} alt="plane icon" /> Find Flight
         </Link>
-        <Link to={"hotelflow"} className={page === 'landingpage' ? 'NM_FindStays' : 'AM_FindStays'} rel="noopener noreferrer">
+        <Link to={"/hotelflow"} className={page === 'landingpage' ? 'NM_FindStays' : 'AM_FindStays'} rel="noopener noreferrer">
           <img className='AM_Bed' src={page === "landingpage" ? bed : blackBed} alt="bed icon" /> Find Stays
         </Link>
       </div>

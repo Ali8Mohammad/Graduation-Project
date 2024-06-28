@@ -12,12 +12,12 @@ import FlightAndHotel from '../../Components/FlightAndHotel/FlightAndHotel';
 import Reviewes from '../../Components/Reviewes/Reviewes';
 
 
-export default function LandingPage({ title, para, navButtons, navButtonsForMobile, showTabs}) {
+export default function LandingPage({ className, head2, title, para, navButtons, navButtonsForMobile, showTabs}) {
     return (
         <section className='NM_LandingPage'>
             <Wrapper backgroundImage={landingPageBackground}>
                 <Navigation buttons={navButtons} isLandingPage={true} navMobile ={navButtonsForMobile} page="landingpage"/>
-                <Hero title={title} para={para} />
+                <Hero title={title} para={para} className={className} head2={head2} />
             </Wrapper>
             <main>
             <PromoButtonComponent
