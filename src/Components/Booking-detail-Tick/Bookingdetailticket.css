@@ -1,5 +1,5 @@
 .MH-container {
-    padding: 135px 7% 60px 7%;
+    padding: 135px 105px 60px 104px;
 }
 .MH-head {
     margin-bottom: 40px;
@@ -84,12 +84,12 @@
     padding-bottom: 64px;
 }
 .MH-main .MH-main-1-2 {
-    width: 70%;
+    width: 53.5rem;
     display: flex;
     border-radius:16px ;
 }
 .MH-main .MH-main1 {
-    width: 32%;
+    width: 15.4rem;
     padding: 24px;
     gap: 16px;
     background-color:#EBF6F2 ;
@@ -111,13 +111,14 @@
     text-align: left;
 }
 .MH-main .MH-main2 {
-    width: 68%;
+
+    width: 38.125rem;
     background-color: white;
     border-top-right-radius: 16px;
     border-bottom-right-radius:16px ;
 }
 .MH-main .MH-main3 {
-    width: 30%;
+    width: 23.5rem;
 }
 .MH-airplan {
     margin: 16px 0;
@@ -130,7 +131,7 @@
     margin: 2px;
 }
 .MH-main2 .MH-main2-head {
-    padding: 20px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,14 +163,13 @@
     font-family: var(--second-font);
 }
 .MH-main2 .MH-main2-contents {
-    padding: 20px;
+    padding: 24px;
     display: flex;
-    justify-content: space-between;
 }
 .MH-main2 .MH-main2-contents .MH-main2-content1 {
     display: flex;
     align-items: center;
-    margin: 5px;
+    margin-right: 32px;
 }
 .MH-main2 .MH-main2-contents .MH-main2-content1 p {
     font-weight: 600;
@@ -191,13 +191,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:  6px;
+    margin-right:  1.5px;
 }
 .MH-main2 .MH-main2-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 52px;
-    padding: 20px 20px 0 20px;
 }
 .MH-main2 .MH-main2-footer p {
     margin-bottom: -8px;
@@ -211,11 +209,36 @@
     font-size: 12px;
     opacity: .6;
 }
+.MH-main2 .MH-main2-footer .MH-EK {
+    margin: 37.5px 0 34.5px 30px;
+}
 .MH-main3 img {
     height: 100%;
     width: 100%;
 }
-@media (max-width:1200px) {
+.MH-paragraph p{
+    margin-bottom:0 ;
+    text-align: right;
+}
+@media (max-width:1275px) {
+    .MH-main .MH-main3 {
+        width: 100%;
+        height: 360px;
+        margin: 15px 0;
+    }  
+    .MH-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .MH-main .MH-main1 {
+        border-radius: 16px 0 0 16px;
+        width: 32%;
+    }
+    .MH-main .MH-main2 {
+        width: 68%;
+    } 
     .MH-main1 {
         border-radius: 20px;
         text-align: center;
@@ -234,30 +257,17 @@
         width: 100%;
        
     }
-    .MH-main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
+    .MH-main2 .MH-main2-contents {
+        justify-content: space-between;
     }
 
-     .MH-main .MH-main3 {
-        width: 100%;
-        height: 360px;
-        margin: 15px 0;
-    }  
-    .MH-main .MH-main1 {
-        border-radius: 16px 0 0 16px;
-    }  
-
 }
+
 @media(max-width:992px) {
     .MH-main2 .MH-main2-contents .MH-main2-content1 p {
         font-size: 12px;
         font-weight: 500;
     }
-}
-@media (max-width:768px) {
     .MH-main .MH-main-1-2 {
         flex-wrap: wrap;
     }
@@ -267,26 +277,13 @@
     .MH-main .MH-main-1-2 .MH-main2 {
         width: 100%;
     }
-    .MH-content {
-       flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    .MH-head p {
-        text-align: center;
-        margin: 20px 0;
-    }
-    .MH-content .MH-content2 p {
-        text-align: center;
+    .MH-main2 .MH-main2-contents {
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .MH-main2 .MH-main2-head {
         border-top-left-radius:16px ;
         text-align: center;
-        padding: 10px;
-    }
-    .MH-main2-icons {
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
     .MH-main .MH-main3 {
         height: 305px;
@@ -295,45 +292,64 @@
     .MH-main2 {
         margin-top: 15px;
     }
-    .MH-main .MH-main3 {
-        height: 305px;
-    } 
     .MH-main .MH-main1 {
         border-radius: 16px;
-    }
-    .MH-main .MH-main2 {
+}
+.MH-content {
+    flex-direction: column;
+     justify-content: center;
+     text-align: center;
+ }
+ .MH-head p {
+     text-align: center;
+     margin: 20px 0;
+ }
+ .MH-content .MH-content2 p {
+     text-align: center;
+ }
+ .MH-content .MH-content1 .MH-location-path {
+   justify-content: center;
+ }
+     .MH-main .MH-main2 {
         border-radius:16px;
     }
-}
-@media (min-width:576px) and  (max-width:615px)
-{
-    .MH-main2-icons {
-        flex-direction: column;
+    .MH-container {
+        padding: 135px 60px 60px 60px;
     }
+@media (max-width:768px) {
+
+
+    .MH-main2-icons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .MH-main2 .MH-main2-contents .MH-main2-content1 {
+        margin-top: 5px;
+    }
+
+
+ 
+}
+
 }
 @media(max-width:576px) {
     .MH-main {
         padding-bottom: 30px;
     }
-    .MH-main2 .MH-main2-contents {
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 15px 0;
-    }
     .MH-main2 .MH-main2-footer {
         flex-wrap: wrap;
         text-align: center;
-        justify-content: center;
         margin-top: 10px;
     }
     .MH-container {
         padding: 135px 35px 0 35px;
     }
     .MH-main2 .MH-main2-head p {
-        font-size: 12px;
+        font-size: 10px;
+        font-weight: var(  --main-font-weight);
     }
     .MH-main2 .MH-main2-head .MH-main2-content p {
-        font-size: 15px;
+        font-size: 13px;
     }
     .MH-main2 .MH-main2-head .MH-main2-content span {
         font-size: 10px;
@@ -341,5 +357,16 @@
     .MH-main2-icons {
         justify-content: space-around;
     }
+    .MH-main2 .MH-main2-head {
+        padding: 14px;
+
+    }
+    .MH-main2 .MH-main2-contents {
+        padding: 14px;
+    }
+    .MH-main2 .MH-main2-footer .MH-EK {
+        margin:10px 0 0 14px;
+    }
+
 
 }

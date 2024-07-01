@@ -7,9 +7,16 @@ import img5 from './../../assets/images/Place-2-f.png'
 import img6 from './../../assets/images/Place-3-f.png'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState,useEffect  } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function Favoritesmain () {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     const info = [
         {
             id:1,
@@ -36,16 +43,23 @@ export default function Favoritesmain () {
             image:img6
         }
     ]
-
-
+    const [heartStates, setHeartStates] = useState(info.map(() => false));
+    const toggleHeartState = (index) => {
+        const newHeartStates = heartStates.map((state, i) => i === index?!state : state);
+        setHeartStates(newHeartStates);
+    };
 
     return (
         <section className='MH-favorites-main'>
             {
-                            info.map((item) => {
+                            info.map((item , index) => {
                                 return (
-                                    <div key={item.id} className="MH-favorites-box">
+                                    <div key={item.id} className="MH-favorites-box" data-aos="fade-up"
+                                    data-aos-duration="2000">
                                     <div className="MH-image">
+                                        <div className="MH-number-img">
+                                            <p>9 images</p>
+                                        </div>
                                         <img src={item.image} alt="not-found" />
                                     </div>
                                     <div className="MH-favorites-info">
@@ -83,7 +97,12 @@ export default function Favoritesmain () {
                                         </div>
                                         <div className="MH-box-button">
                                             <div className="MH-box-button1">
-                                            <FontAwesomeIcon icon={faHeart} />
+                                            <FontAwesomeIcon 
+                                        icon={faHeart} 
+                                        color={heartStates[index]? "#FF8500" : "black"} 
+                                        onClick={() => toggleHeartState(index)} 
+                                    />
+
                                             </div>
                                             <div className="MH-box-button2">
                                                 <button>View Place</button>

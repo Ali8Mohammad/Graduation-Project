@@ -21,7 +21,7 @@
 .MH-popup {
     Width:640px;
     border-radius: 12px;
-    Padding:10px;
+    Padding:64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,6 +184,7 @@
     .MH-popup {
         width: 90%;
         height: 95%;
+        padding: 30px;
     }
     .MH-inputs {
         width: 100%;

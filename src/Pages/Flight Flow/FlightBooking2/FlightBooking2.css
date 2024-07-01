@@ -16,3 +16,9 @@
 .MH-FlightBooking2 .MS-newsletter {
     bottom: -1080px;
 }
+.MH-FlightBooking2 .MH-main2 .MH-main2-contents {
+    justify-content: space-between;
+}
+.MH-FlightBooking2 .MH-main2 .MH-main2-contents {
+    margin-right: 0;
+}

@@ -56,7 +56,6 @@ export default function Popup({link}) {
                     <p>Securely save my information for 1-click checkout</p>
                     </div>
                     <div className="MH-btn">
-                    {/* <Link className='MH-addbtn ' to={"/flightflow/booking1"}>Add Card</Link> */}
                     {link}
                     </div>
                    </form>

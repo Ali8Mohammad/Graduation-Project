@@ -1,7 +1,15 @@
 import './Bookingdetailinfo.css'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Bookinginfo () {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return (
-        <div className="MH-info">
+        <div className="MH-info" data-aos="fade-up"
+        data-aos-duration="2000">
         <h2>Terms and Conditions</h2>
         <h4>Payments</h4>
         <div className="MH-info-content">

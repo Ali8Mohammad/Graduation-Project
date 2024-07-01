@@ -9,9 +9,11 @@ export default function Favorites() {
   return (
     <section className='MH-favorites'>
       <Navigation/>
+      <div className="MH-favorites-content">
       <Favoriteshead/>
       <Favoritesmain/>
-      <Newsletter/>
+      </div>
+      {/* <Newsletter/> */}
       <Footer/>
     </section>
   )

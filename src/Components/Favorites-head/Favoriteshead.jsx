@@ -15,11 +15,11 @@ export default function Favoriteshead () {
         <div className='MH-favorites-head' >
             <h2 className='MH-title'>Favourites</h2>
             <div className={`MH-head-content ${showBorderL? 'show-border-l' : ''} ${showBorderR? "show-border-r":""}`}>
-                <div className="MH-head-left" onClick={toggleBorder}>
+                <div  data-aos="fade-right"  data-aos-duration="1500" className="MH-head-left" onClick={toggleBorder}>
                     <p>Flights</p>
                     <span>2 marked</span>
                 </div>
-                <div className="MH-head-right" onClick={toggleBorder1}>
+                <div data-aos="fade-left"  data-aos-duration="1500" className="MH-head-right" onClick={toggleBorder1}>
                     <p>Places</p>
                     <span>3 marked</span>
                 </div>
